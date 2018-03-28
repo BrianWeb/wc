@@ -1,0 +1,96 @@
+<div class="row .no-gutters">
+
+  <div class="col-0 col-sm-0 col-md-3 col-lg-3 col-xl-2 noPadding">
+    <app-product-menu></app-product-menu>
+  </div>
+
+  <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-10 noPadding">
+
+    <div id="category-list-Page">
+      <!-- <div id="searchDiv">
+      <div class='row no-gutters justify-content-center'>
+
+
+        <button type="button" (click)='openNav()' class="openbtn">
+          <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+        </button>
+
+
+      </div>
+    </div>
+          -->
+
+
+      <div id="productThumbnailsDiv">
+        <div class="categoryGroup" *ngFor="let category of categories">
+
+
+          <div class="categoryGroupInnerContainer">
+            <!--added just for padding-->
+
+            <div class="customHeader">
+
+              <img *ngIf="category.fields.icon" class="category-image" src="{{ category.fields.image.fields.file.url }}">
+
+              <div class="customCategoryHeading">{{ category.fields.title }}</div>
+
+              {{ category.fields.categoryDescription }}
+              <!--<div *ngFor="let subCategory1 of subCategory1s">{{ subCategory1.fields.title }}
+            <div *ngFor="let subCategory1 of productsForSubCategory1s[subCat1.sys.id]">
+              <a md-line [routerLink]="['/products', product.fields.slug]">{{product.fields.subCategory1}}</a>
+            </div>-->
+
+            </div>
+
+            <div class="row no-gutters justify-content-center" id="productThumbnails">
+
+              <!-- contenful code that works:
+              <div *ngFor="let product of productsForCategories[category.sys.id]">
+               Contentful code <a md-line [routerLink]="['/products', product.fields.slug]">{{product.fields.productName}}</a>
+              </div>
+            -->
+              <div class="thumbnailCol col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 " *ngFor="let product of productsForCategories[category.sys.id]">
+
+
+                <div class="thumbnail">
+                  <img src="{{ product.fields.image[0].fields.file.url }}"
+                       [title]='product.productName' [alt]='product.productName'>
+                </div>
+
+                <div class="productThumbnailText">
+
+                  <div class="productNameAndDesc">
+                    <!--container class to group productName and productDescription to give them set heights-->
+                    <div class="productName">
+                      <a md-line [routerLink]="['/products', product.fields.slug]">{{product.fields.productName}}</a>
+                    </div>
+
+                    <div class="productDescription">
+                      {{ product.fields.productDescription }}
+                      <br />
+                    </div>
+                  </div>
+
+                  <div class="moreLink">
+                    <a [routerLink]="['/products', product.fields.slug]">More</a>
+                    <i id="productsChevron" class="fa fa-lg fa-chevron-right" aria-hidden="true"></i>
+                  </div>
+                  <!--<div *ngIf="product.fields.subCategory1.fields.slug">
+                  <a [routerLink]="['/categories', product.fields.subCategory1.fields.slug]">
+                    Slug:         {{product.fields.subCategory1.fields.slug}}
+
+                  </a>
+                </div> -->
+                </div>
+
+              </div>
+
+            </div><!--/productThumbnailText-->
+          </div>
+
+        </div>
+
+      </div><!--/categoryGroupInnerContainer-->
+    </div>
+  </div>
+</div>

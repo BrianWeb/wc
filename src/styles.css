@@ -1,0 +1,287 @@
+img {
+  width: 100%;
+}
+
+.alignRight,
+.floatRight {
+  float: right;
+}
+
+
+
+.centerText,
+.contactCol,
+.icon_sosa,
+footer {
+  text-align: center;
+}
+
+.boxInner,
+.wrap {
+  overflow: hidden;
+}
+
+html {
+  border-radius: 0;
+  text-decoration: none;
+}
+
+body {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  text-rendering: optimizeLegibility;
+  font-size: 13pt;
+  font-family: Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  /*background-color: #E8ECF1;*/
+}
+  /*have a look at below. Overwriting margin-top:1rem, and small font-size  from Clarity UI*/
+  body .p0, body p, body p.p0 {
+    letter-spacing: normal;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+
+a,
+a:active,
+a:hover,
+a:visited,
+a:link{
+  text-decoration: none !important;
+  background-color: transparent;
+  color: #3b5998;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin-left: 15px;
+}
+
+dl, ol, ul { /*Bootrap override of margin-bottom:1rem;*/
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+
+li {
+  padding-bottom: 10px;
+  line-height: 1.3em;
+}
+
+h1{
+  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  margin: 0;
+  /*color: #E62E00; Orange */
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+  h1 a:hover,
+  h1 a:hover:active {
+    color: #ff0;
+  }
+
+  h1 a,
+  h1 a:visited,
+  h2 a,
+  h2 a:visited {
+    color: #4D4D4D;
+    text-decoration: none;
+  }
+
+h2 {
+  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  font-size: 1.8em;
+  color: #3b5998;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+
+h3 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.1em;
+  color: forestgreen;
+  padding-top: 20px;
+}
+
+
+tr {
+  padding: 10px;
+}
+
+figure {
+  padding: 5px;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+.italic {
+  font-style: italic;
+}
+/*
+input {
+  line-height: 35px;
+  border: 1px solid #C2CEDA;
+}
+ 
+
+
+  input:focus {
+    border: 1px solid forestgreen;
+  }
+ */
+
+/*override of clarity:  */
+input[type=date], input[type=datetime-local], input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=time], input[type=url] {
+  border: 1px solid #ccc;
+  height: 1.5rem;
+}
+
+  input[type=date]:not([readonly]), input[type=datetime-local]:not([readonly]), input[type=email]:not([readonly]), input[type=number]:not([readonly]), input[type=password]:not([readonly]), input[type=tel]:not([readonly]), input[type=text]:not([readonly]), input[type=time]:not([readonly]), input[type=url]:not([readonly]) {
+    background: none;
+  }
+
+.defaultButton {
+  line-height: 37px;
+  color: white;
+  background-color: forestgreen;
+  border: none;
+}
+
+
+
+.bold {
+  font-weight: 700;
+}
+
+.row .keyDescription {
+  margin-bottom: 10px;
+}
+
+.list {
+  padding-left: 15px;
+}
+
+
+.justifyText {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/*
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .fa-envelope-o { /*this creates a carriage return after the email envelope*/
+/* padding-left: 32%;
+        padding-right: 32%;
+    }
+}
+*/
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.noPadding {
+  padding: 0px;
+}
+
+#productThumbnailsDiv {
+  background-color: #ecf2f8;
+}
+
+
+.thumbnail {
+  border-radius: 0;
+}
+
+.backButton {
+  background-color: #52ac39;
+  padding: 6px;
+  margin-left: 15px;
+  color: white;
+  width: 120px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.fa-search {
+  padding-left: 10px;
+}
+
+.pageContainer {
+  padding-top: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #eff2f5;
+}
+
+@media only screen and (min-width:576px) {
+  .pageBorder {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+/*.pageInnerContainer{
+  padding:5px;
+} /*Usually for text, which always needs some padding, even on mobile devices, unlike images*/
+
+.videoContainer {
+  text-align: center;
+}
+
+video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.articleTitle {
+  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  font-size: 2.7em;
+  color: #444d54;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/*Accociation images are on home page and Sustainabiliy page (for the FSC and PEFC tms certs)*/
+
+
+.sustainabilityLogo {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 1.5em;
+ 
+}
+
+.sustainabilityLogoGeneral {
+  max-width: 280px;
+}
+
+.sustainabilityLogoWoodConcepts {
+  max-width: 170px;
+}
+
+.associationImagesDiv {
+  text-align: center;
+}
+
+
+
+
+.associationSmallImageFile {
+  max-width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+

@@ -1,0 +1,279 @@
+
+<div class="productDetailsPage">
+
+
+  <a class="defaultButton" (click)='onBack()'>
+    <div class="backButton">
+      <i class='fa fa-lg fa-chevron-left'></i> Back
+    </div>
+  </a>
+
+
+  <div *ngIf='product'>
+
+    <div class='row justify-content-center no-gutter' id="productDetailsRow">
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 offset-xl-1 col-xl-5">
+
+          <article>
+            <div class="productImageTextBox">
+              <div class="productName">
+                {{ product.fields.productName }}
+              </div>
+              <div>{{ product.fields.productDescription }}</div>
+              <br />
+              <div Markdown>{{ product.fields.productDescriptionLong }}</div>
+              <br />
+            </div>
+
+            <div>
+              <img [src]='product.fields.image[0].fields.file.url'
+                   [title]='product.productName' [alt]='product.productName'>
+            </div>
+
+            <div class="productDetails">
+              <div *ngIf="product.fields.keyFeature1">
+                <div class="productDetailsHeading">
+                  Key Features
+                </div>
+                <div class="productDetailsText">
+
+                  <div class="productDetailsTextParagraph">
+                    <ul>
+                      <li *ngIf="product.fields.keyFeature1">{{ product.fields.keyFeature1}} </li>
+                      <li *ngIf="product.fields.keyFeature2">{{ product.fields.keyFeature2}} </li>
+                      <li *ngIf="product.fields.keyFeature3">{{ product.fields.keyFeature3}} </li>
+                      <li *ngIf="product.fields.keyFeature4">{{ product.fields.keyFeature4}} </li>
+                      <li *ngIf="product.fields.keyFeature5">{{ product.fields.keyFeature5}} </li>
+                      <li *ngIf="product.fields.keyFeature6">{{ product.fields.keyFeature6}} </li>
+                      <li *ngIf="product.fields.keyFeature7">{{ product.fields.keyFeature7}} </li>
+                      <li *ngIf="product.fields.keyFeature8">{{ product.fields.keyFeature8}} </li>
+                      <li *ngIf="product.fields.keyFeature9">{{ product.fields.keyFeature9}} </li>
+                      <li *ngIf="product.fields.keyFeature10">{{ product.fields.keyFeature10}} </li>
+                      <li *ngIf="product.fields.keyFeature11">{{ product.fields.keyFeature11}} </li>
+                      <li *ngIf="product.fields.keyFeature12">{{ product.fields.keyFeature12}} </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </article>
+
+        </div><!--/col-->
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5">
+
+          <article>
+            <div class="productDetails">
+
+              <div class="productDetailsHeading">
+                Applications
+              </div>
+
+              <div class="productDetailsText">
+
+                <div *ngIf="product.fields.applicationsType1Header">
+                  <div class="productDetailsTextParagraph">
+                    <span class="bold">{{product.fields.applicationsType1Header}}: </span>
+                  </div>
+                </div>
+                <div *ngIf="product.fields.type1Applications">
+                  <div class="productDetailsTextParagraph">
+                    <ul *ngFor="let type1Application of type1Applications">
+                      <li>{{type1Application.fields.applicationTypeInstance}}</li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div *ngIf="product.fields.applicationsType2Header">
+                  <div class="productDetailsTextParagraph">
+                    <span class="bold">{{product.fields.applicationsType2Header}}: </span>
+                  </div>
+                </div>
+                <div *ngIf="product.fields.type2Applications">
+                  <div class="productDetailsTextParagraph">
+                    <ul *ngFor="let type2Application of type2Applications">
+                      <li>{{type2Application.fields.applicationTypeInstance}}</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="productDetailsHeading">
+                  Range
+                </div>
+
+                <div class="productDetailsText">
+
+                  <div class="productDetailsTextParagraph">
+
+                    <div *ngIf="product.fields.sizes">
+                      <span class="bold">Sizes: </span>              {{ product.fields.sizes}}
+                    </div>
+
+                    <div *ngIf="product.fields.variations">
+                      <span class="bold">Variations: </span>              {{ product.fields.variations}}
+                    </div>
+
+                    <div *ngIf="product.fields.lengths">
+                      <span class="bold">Lengths: </span>       {{ product.fields.lengths}}
+                    </div>
+
+                    <div *ngIf="product.fields.widths">
+                      <span class="bold">Widths: </span>        {{ product.fields.widths}}
+                    </div>
+
+                    <div *ngIf="product.fields.thicknesses">
+                      <span class="bold">Thicknesses: </span>   {{ product.fields.thicknesses}}
+                    </div>
+
+                    <div *ngIf="product.fields.sheetsPerPallet">
+                      <span class="bold">Sheets Per Pallet: </span>  {{ product.fields.sheetsPerPallet}}
+                    </div>
+
+                    <div *ngIf="product.fields.glue">
+                      <span class="bold">Glue: </span>               {{product.fields.glue}}
+                    </div>
+
+                    <div *ngIf="product.fields.grade">
+                      <span class="bold">Grade: </span>              {{ product.fields.grade}}
+                    </div>
+
+                    <div *ngIf="product.fields.loadSizes">
+                      <span class="bold">Load Sizes: </span>         {{ product.fields.loadSizes}}
+                    </div>
+
+                    <div *ngIf="product.fields.brand">
+                      <span class="bold">Brand: </span>           {{product.fields.brand.fields.companyName}}
+                    </div>
+
+                  </div>
+
+                  <div *ngIf="product.fields.certification">
+                    <div class="productDetailsHeading">
+                      Certification(s)
+                    </div>
+                    <div class="productDetailsText">
+                      <span class="productDetailsTextParagraph">
+                        <span>{{ product.fields.certification}}</span>
+                      </span>
+                      <div *ngIf="product.fields.certificationNote">
+                        {{ product.fields.certificationNote}}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div *ngIf="product.fields.specificationsSheet">
+                    <div class="productDetailsHeading">
+                      Technical Specifications
+                    </div>
+                    <div class="productDetailsText">
+                      <div class="downloadLinks" *ngFor="let specificationsSheet of specificationsSheets">
+                        <div>
+                          <a target="_blank" href={{specificationsSheet.fields.file.url}}>
+                            Download {{specificationsSheet.fields.title}}
+                          </a>
+                        </div>
+                      </div>
+
+
+                      <!--  <a target="_blank" href={{product.fields.specificationsSheet[0].fields.file.url}}>
+                        Download {{product.fields.specificationsSheet[0].fields.title}}
+                      </a>-->
+                    </div>
+                  </div>
+
+
+                  <div *ngIf="product.fields.technicalGuide">
+                    <div class="productDetailsHeading">
+                      Technical Guide
+                    </div>
+                    <div class="productDetailsText">
+                      <a target="_blank" href={{product.fields.technicalGuide[0].fields.file.url}}>
+                        Download {{product.fields.technicalGuide[0].fields.title}}
+                      </a>
+                    </div>
+                  </div>
+
+
+                  <div *ngIf="product.fields.video">
+                    <div class="productDetailsHeading">
+                      Video Resources
+                    </div>
+                    <div class="productDetailsText">
+                      {{product.fields.video[0].fields.title}}<br /><br />
+                    </div>
+                    <div class="videoContainer">
+                      <video controls [poster]="product.fields.video[1].fields.file.url">
+                        <source [src]="product.fields.video[0].fields.file.url" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <!--
+                  <div *ngFor="let forecast of forecasts">
+                    Image Array URL here:
+                    {{forecast.hum}}
+                  </div>
+
+                  <div *ngFor="let image of images">
+                    Image Array URL here:
+
+                    <img [src]='image.fields.file.url'
+                         [title]='product.productName' [alt]='product.productName'>
+
+                  </div>
+
+
+                  <div *ngFor="let type1Application of type1Applications">
+                    App 1:
+                    <span>{{type1Application.fields.applicationTypeInstance}}</span>
+                  </div>
+
+
+                  <div *ngFor="let type2Application of type2Applications">
+                    App 2:
+                    <span>{{type2Application.fields.applicationTypeInstance}}</span>
+                  </div>
+
+                      -->
+                  <!--
+                  <div *ngFor="let category of categories"
+
+
+                          <button (click)="getThicknesses()">press</button>-->
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div><!-- /*ngIf='product' -->
+
+
+
+
+
+

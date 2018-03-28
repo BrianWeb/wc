@@ -1,0 +1,255 @@
+@font-face {
+	font-family: 'icon_sosa';
+	src:url('fonts/icon_sosa.eot?ojr6m9');
+	src:url('fonts/icon_sosa.eot?#iefixojr6m9') format('embedded-opentype'),
+		url('fonts/icon_sosa.ttf?ojr6m9') format('truetype'),
+		url('fonts/icon_sosa.woff?ojr6m9') format('woff'),
+		url('fonts/icon_sosa.svg?ojr6m9#icon_sosa') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'icon_sosa';
+    src: url('icon_sosa.eot') format('embedded-opentype');
+}
+
+
+
+.icon_sosa {
+	font-family: 'icon_sosa';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.camera:before {
+	content: "\31";
+}
+.landline:before {
+	content: "\34";
+}
+.smartphone:before {
+	content: "\35";
+}
+.landscape:before {
+	content: "\41";
+}
+.portraight:before {
+	content: "\48";
+}
+.play:before {
+	content: "\4e";
+}
+.pause:before {
+	content: "\4f";
+}
+.stop:before {
+	content: "\50";
+}
+.end:before {
+	content: "\51";
+}
+.start:before {
+	content: "\52";
+}
+.fast_forward:before {
+	content: "\53";
+}
+.rewind:before {
+	content: "\54";
+}
+.repeat:before {
+	content: "\55";
+}
+.six_point_cog:before {
+	content: "\57";
+}
+.two_cogs:before {
+	content: "\59";
+}
+.clock:before {
+	content: "\5b";
+}
+.pencil_top:before {
+	content: "\60";
+}
+.pencil:before {
+	content: "\61";
+}
+.paper_clip:before {
+	content: "\62";
+}
+.star_filled:before {
+	content: "\65";
+}
+.star_outline:before {
+	content: "\66";
+}
+.message_me:before {
+	content: "\67";
+}
+.message_us:before {
+	content: "\68";
+}
+.info:before {
+	content: "\69";
+}
+.flag:before {
+	content: "\6a";
+}
+.map:before {
+	content: "\6e";
+}
+.map_pointer:before {
+	content: "\6f";
+}
+.reply:before {
+	content: "\70";
+}
+.link:before {
+	content: "\71";
+}
+.rss:before {
+	content: "\72";
+}
+.wireless:before {
+	content: "\73";
+}
+.tweet:before {
+	content: "\74";
+}
+.twitter:before {
+	content: "\75";
+}
+.facebook:before {
+	content: "\76";
+}
+.house:before {
+	content: "\c7";
+}
+.envelope:before {
+	content: "\c9";
+}
+.envelope_open_fill:before {
+	content: "\d1";
+}
+.envelope_open_outline:before {
+	content: "\d6";
+}
+.user:before {
+	content: "\dc";
+}
+.users:before {
+	content: "\dd";
+}
+.download:before {
+	content: "\e0";
+}
+.users_two:before {
+	content: "\e1";
+}
+.cross:before {
+	content: "\e3";
+}
+.chain_link:before {
+	content: "\e4";
+}
+.tick:before {
+	content: "\e5";
+}
+.paper_filled:before {
+	content: "\e9";
+}
+.unlock:before {
+	content: "\ea";
+}
+.folder:before {
+	content: "\eb";
+}
+.pointer_down:before {
+	content: "\ec";
+}
+.pointer_up:before {
+	content: "\ed";
+}
+.arrow_up:before {
+	content: "\ee";
+}
+.arrow_down:before {
+	content: "\ef";
+}
+.arrow_right:before {
+	content: "\f1";
+}
+.sun:before {
+	content: "\f2";
+}
+.arrow_left:before {
+	content: "\f3";
+}
+.google_plus:before {
+	content: "\106";
+}
+.polaroid:before {
+	content: "\107";
+}
+.credit_card:before {
+	content: "\108";
+}
+.visa:before {
+	content: "\109";
+}
+.mastercard:before {
+	content: "\10a";
+}
+.paypal:before {
+	content: "\10c";
+}
+.maestro:before {
+	content: "\10f";
+}
+.vcard:before {
+	content: "\11e";
+}
+.calendar:before {
+	content: "\120";
+}
+.facebook_word:before {
+	content: "\135";
+}
+.twitter_word:before {
+	content: "\136";
+}
+.s_link:before {
+	content: "\137";
+}
+.digg:before {
+	content: "\138";
+}
+.linkedin:before {
+	content: "\13c";
+}
+.webpage:before {
+	content: "\201a";
+}
+.eye:before {
+	content: "\201e";
+}
+.pointer_left:before {
+	content: "\2039";
+}
+.pointer_right:before {
+	content: "\203a";
+}
+.euro:before {
+	content: "\20ac";
+}

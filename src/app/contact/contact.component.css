@@ -1,0 +1,19 @@
+
+.location{
+  margin-top:15px;
+
+}
+.locationMap{
+ width: 100%;
+}
+.locationHeading {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+#location2 {
+  border-top: 1px solid white;
+  margin-top:25px;
+}
+#contactPageAddress {
+ padding:20px;
+}

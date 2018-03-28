@@ -1,0 +1,57 @@
+
+
+
+.productDetailsPage {
+  padding-top: 15px;
+
+}
+
+@media only screen and (min-width:768px){
+  .productDetailsPage {
+    margin-left: 15px;
+  }
+}
+
+
+
+.productImageTextBox{
+  padding: 10px; background-color: white;
+
+}
+
+.productName {
+  color: #3b5998;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+
+.productDetails {
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: white;
+}
+
+
+.productDetailsHeading {
+  padding-top: .8em;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #006747;
+  /*color: #6e7b91;*/
+}
+
+.productDetailsText {
+  border-top: 1px solid #C2CEDA;
+  padding-top: .8em;
+  padding-bottom: .5em;
+  color: #444d54;
+}
+
+.productDetailsTextParagraph{
+  padding-bottom:.5em;
+}
+
+
+

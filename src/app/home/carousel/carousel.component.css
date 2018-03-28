@@ -1,0 +1,197 @@
+/*For caption in top right hand corner
+
+  .carousel-caption {
+  color: lightgrey;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) );
+  top: 3%;
+  bottom: auto;
+  right: 3%;
+  left: auto;
+  padding:10px;
+
+}*/
+
+
+.carousel-column {
+  border-top: solid 15px white;
+  border-left: solid 15px white;
+  border-right: solid 15px white;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .carousel-column {
+    display: none;
+  }
+}
+
+.carouselColumnHeaderDiv {
+  color: darkslategrey;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width:1199px) {
+  .carousel-column-header-div {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+#product-logo {
+  width: 35%
+}
+
+
+#logo-caption {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 3vw;
+  color: green;
+  vertical-align: sub;
+}
+
+@media only screen and (min-width:1199px) {
+  #logo-caption {
+    font-size: 2em;
+  }
+}
+
+#carousel-images {
+  /* z-index: -1; /* makes the below code work by extending the caro column over the caro image*/
+  margin-bottom: -5px; /*workaround  - need permanent fix*/
+}
+
+/*was used when column was on left hand side
+@media only screen and (min-width:768px) and (max-width:1080px){
+  .carousel-column {
+    width: 110%;
+    z-index: 10;
+  }
+}*/
+
+#carouselColumnFooterLogos img {
+  width: 28%;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+
+
+img { /*has to be applied to img to override Bootstrap's 'img vertical-align of middle*/
+  vertical-align: sub;
+}
+
+
+sustainabilityLogo {
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+}
+
+
+.carousel-caption {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) );
+  top: 23%;
+  bottom: auto;
+  left: 2%;
+  right: auto;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width: 479px) {
+
+  .carousel-caption {
+    top: 23%;
+  }
+
+    #ad-main-message {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: right; /*bootstrap override*/
+  }
+
+  #ad-footer-message, #ad-sub-message {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+
+  .carousel-caption {
+    top: 8%;
+  }
+
+  #ad-sub-message {
+    font-size: 1.8em;
+    text-align: left; /*bootstrap override*/
+  }
+
+  #ad-main-message {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: right; /*bootstrap override*/
+  }
+}
+
+
+
+#ad-footer-message {
+  padding-top: 10px;
+  font-size: 1.1em;
+  text-align: right; /*bootstrap override*/
+}
+
+.carousel-indicators li {
+  width: 36px;
+  height: 12px;
+}
+/* using bootstrap's d-none d-sm-block instead of below
+@media only screen and (max-width: 575px) {
+  .carousel-caption {
+    display: none;
+  }
+}*/
+
+
+
+
+.carousel-item {
+  transition: opacity ease-out .7s;
+  /*put all the images on top of each other to start with:*/
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+  /*make them all invisible to start with*/
+  opacity: 0;
+}
+
+  .carousel-item.active {
+    top: auto;
+    /*make first image visible*/
+    opacity: 1;
+    position: relative;
+  }
+
+
+
+.carousel-inner {
+  overflow: visible;
+}
+
+
+/*
+@media only screen and (max-width:768px) {
+  .carousel-column {
+    width: 110%;
+    z-index: 10;
+  }
+}*/

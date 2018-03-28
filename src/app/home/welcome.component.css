@@ -1,0 +1,195 @@
+article:nth-child(even) {
+}
+
+#welcomeIntroduction {
+  /*background-color: #eff2f5; nice blue-gray*/
+  background-color: #fff;
+  color: #002766;
+}
+
+#welcomeText {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#welcomeTextHeader {
+  font-size: 45px;
+  padding-bottom: 15px;
+}
+
+#welcomeTextBody {
+  font-size: 1.1em;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 200;
+
+}
+
+  #welcomeTextBody p {
+    text-align: center;
+  }
+
+#companySellingPoints {
+  background-color: #3b5998;
+  color:white;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media only screen and (min-width:576px) and (max-width:660px){
+  #companySellingPoints {
+    font-size: 1.1em;
+  }
+}
+
+fa-check #companySellingPoints clr-icon { /*didn't reference by shape/tick has the html shape attribute isn't supported at time of writing by IE or Chrome*/
+  width: 12px;
+  height: 12px;
+}
+
+/*
+  .carousel-caption {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    font-family: 'Century Gothic', Muli, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 40%;
+    top: -575px;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    margin-left: 60%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+  }
+
+
+}
+*/
+
+/**/
+ngb-carousel {
+  width: inherit;
+  height: inherit;
+}
+
+/* ---- PRODUCT ICONS ------ */
+
+
+#productIconsAndTitleContainer {
+  background-color: whitesmoke;
+  padding-bottom: 40px;
+}
+
+
+/*Product Icons*/
+@media only screen and (min-width:576px) {
+  #productIconsAndTitleContainer {
+    padding-top: 15px;
+  }
+}
+
+#productIconsRow {
+
+}
+
+
+.productSvgAndHeader {
+  background-color: #499933;
+  /*background-color: #6e7b91;*/
+  color: white;
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+  padding-top: 1em;
+  padding-bottom: 1.2em;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:992px){
+  .productSvgAndHeader {
+    height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
+  }
+}
+svg {
+  width: 100%;
+}
+
+.productSvg {
+  padding-top: 1.5em;
+  fill: #fff;
+}
+
+.st0 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+}
+
+.productHeading {
+  padding: .5em;
+  font-size:1.4em;
+  letter-spacing:1px;
+}
+
+.serivceDescription {
+  /* padding: 1.4em; only add this if description is being used*/
+}
+
+/*seting svg to 100% allows us to center SVG. Without it the browser gives it about 150% width (i.e. wider than its div). Not sure why. Can't find any svg settings in any CSS stylesheets*/
+
+
+#viewAllProductsLink {
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #499933;
+  color:white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.productSvgAndHeader a {
+  font-size: 1.2em;
+  color: white;
+}
+
+#associations {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /*border-top: 1px solid gainsboro;*/
+  background-color: white;
+}
+
+
+#sustainabilityIntro {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#sustainabilityIntroTextCol {
+  padding-top: 10px;
+  color: #002766;
+}
+
+
+#pefc-logo {
+  width:80%;/*temp code - remove space around FSC image to make 2 images same width on mobiles*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+

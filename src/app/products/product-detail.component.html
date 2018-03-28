@@ -1,0 +1,83 @@
+<div class="productDetailsPage">
+
+  <a class="defaultButton" (click)='onBack()'>
+    <div class="backButton">
+
+      <i class='fa fa-lg fa-chevron-left'></i> Back
+
+    </div>
+  </a>
+
+  <div *ngIf='product'>
+   
+
+    <div class='row no-gutter'>
+
+      <div class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-5">
+        <img [src]='product.imageUrl' [title]='product.productName'>
+        <div class="productImageTextBox">
+          <div class="productName">
+            {{product.productName}}
+          </div>
+          <div>{{ product.description}}</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-5">
+
+        <div class="productDetails">
+          <div class="productDetailsHeading">
+            Applications
+          </div>
+          <div class="productDetailsText">
+            <div class="productDetailsTextParagraph"><span class="bold">{{product.applications1Heading}}</span>{{ product.applications1}}</div>
+            <div class="productDetailsTextParagraph"><span class="bold">{{product.applications2Heading}}</span>{{ product.applications2}}</div>
+          </div>
+
+          <div class="productDetailsHeading">
+            Range
+          </div>
+          <div class="productDetailsText">
+            <div class="productDetailsTextParagraph"><span class="bold">{{product.rangeHeading1}}</span>{{ product.sizes}}</div>
+            <div class="productDetailsTextParagraph"><span class="bold">{{product.rangeHeading2}}</span>{{ product.thicknesses}}</div>
+            <div class="productDetailsTextParagraph"><span class="bold">{{product.rangeHeading3}}</span>{{ product.sheetsPerPallet}}</div>
+            <div class="productDetailsTextParagraph"><span class="bold">{{product.rangeHeading4}}</span>{{ product.glue}}</div>
+            <div class="productDetailsTextParagraph"><span class="bold">{{product.rangeHeading5}}</span>{{ product.grade}}</div>
+            <div class="productDetailsTextParagraph"><span class="bold">{{product.rangeHeading6}}</span>{{ product.loadSizes}}</div>
+          </div>
+
+
+          <div class="productDetailsHeading">
+            Certifications
+          </div>
+          <div class="productDetailsText">
+            <div class="productDetailsTextParagraph">{{ product.certifications}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--<div class='row'>
+    <div class='col-md-3'>Code:</div>
+    <div class='col-md-6'>{{product.productCode | lowercase | convertToSpaces: '-'}}</div>
+</div>
+
+<div class='row'>
+    <div class='col-md-3'>Availability:</div>
+    <div class='col-md-6'>{{product.releaseDate}}</div>
+</div>
+<div class='row'>
+    <div class='col-md-3'>Price:</div>
+    <div class='col-md-6'>{{product.price|currency:'USD':true}}</div>
+</div>
+<div class='row'>
+    <div class='col-md-3'>5 Star Rating:</div>
+    <div class='col-md-6'>
+        <pm-star [rating]='product.starRating'>
+        </pm-star>
+    </div>
+</div>-->

@@ -1,0 +1,63 @@
+<div class="pageContainer">
+
+  <div class="row" *ngFor='let staticPage of staticPages'>
+
+    <div class="col-12 col-sm-12 col-md-12 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
+      <h2>Keeping it Green</h2>
+      <p>
+        Wood has stood the test of time in Ireland as an essential component in the building and finishing of commercial buildings and homes.
+        Because it uses less energy to produce that most other building materials, wood is an environmentally friendly option that also looks good and has impressive insulating qualities.
+      </p>
+
+      <p>
+        At its most basic level timber absorbs CO2 and releases O2 so if managed responsibly it is CO2 neutral.
+        All Wood Concepts’ timber comes from sustainably managed forests which are PEFC or FSC certified.
+      </p>
+
+      <br />
+
+      <div class="videoContainer">
+        <video controls poster="../../../assets/images/sustainability/wood_is_good_video_preview.jpg">
+          <source [src]="staticPage.fields.video.fields.file.url" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+
+
+      <!--
+      <iframe class="sustainabilityPageVideo" width="400" src="https://www.youtube.com/embed/EcN3SAGzKgY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          -->
+      <h3>What is FSC?</h3>
+      <p>
+        The Forest Stewardship Council® was established in 1993 to promote responsible management of the world’s forests. It sets standards and provides certification and labelling of timber products. Use of the FSC logo® shows that the product comes from responsible sources.
+      </p>
+      <h3>  What is PEFC?</h3>
+      <p>
+        The Programme for Endorsement of Forest Certification Schemes (PEFC) is committed to conserving forests and their invaluable biodiversity, and the communities and families that own, work, and live in and around forests. Use of the PEFC logo shows that the product comes from responsible sources.
+      </p>
+
+    </div><!--/col-->
+
+  </div><!--/row-->
+
+  <div class="row justify-content-center noPadding" id="sustainabilityImagesDiv">
+    <!--new row needed that wold make a white col go all the way accross the screen. with above code it would have cols on left and right of page-->
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 sustainabilityLogo sustainabilityLogoWoodConcepts">
+      <img src="../assets/images/associations/FSC with COC email size cmyk.png" />
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 sustainabilityLogo sustainabilityLogoWoodConcepts">
+      <img src="../assets/images/associations/Wood Concepts version with COC ref by BW - PEFC-CER-GCMYK-P.png" />
+    </div>
+  </div>
+
+  Paragph here:
+  <br />
+  <div class="row" *ngFor='let staticPage of staticPages'>
+    <div *ngIf="staticPage.fields.longTextField">
+      <div Markdown>
+        {{ staticPage.fields.longTextField }}
+      </div>
+    </div>
+  </div>
+</div>

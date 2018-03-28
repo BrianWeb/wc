@@ -1,0 +1,25 @@
+
+
+#footer {
+  background-color: #444d54;
+  color: #e6f2ff;
+  padding: 20px;
+  font-size: .8em;
+}
+
+ng-form serve
+
+  #footer .productCat1Heading {
+    font-size: 1.1em;
+    color: #cce5ff;
+  }
+
+  #footer ul {
+    padding-left: 0;
+  }
+
+#footerAddress {
+  margin-bottom: 15px;
+}
+
+

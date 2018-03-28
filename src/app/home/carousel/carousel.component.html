@@ -1,0 +1,112 @@
+<!--
+<ngb-carousel>
+  <ng-template ngbSlide>
+    <img src="https://lorempixel.com/900/500?r=1" alt="Random first slide">
+
+
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <img src="https://lorempixel.com/900/500?r=1" alt="Random first slide">
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="https://lorempixel.com/900/500?r=2" alt="Random second slide">
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="https://lorempixel.com/900/500?r=3" alt="Random third slide">
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="https://lorempixel.com/900/500?r=2" alt="Random second slide">
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="https://lorempixel.com/900/500?r=3" alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+-->
+
+
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let item of items">
+    <div class="row no-gutters">
+
+      <div id="carousel-images" class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+
+        <a [routerLink]=" ['/', item.productUrl]">
+
+
+          <img src="../../../assets/carousel_images/{{item.fileName}}.jpg" />
+          <div class="carousel-caption">
+            <!--<div class="carousel-caption d-none d-sm-block">
+      -see https://getbootstrap.com/docs/4.0/utilities/display/ for above docs on d-none, d-sm-block-->
+            <!--<i id="carousel-caption-heading">{{item.brandName + " " + item.productName}}</i> <br />-->
+            <div id="ad-sub-message">
+              Steico's latest
+            </div>
+            <div id="ad-main-message">
+              Innovations in <br />
+              Insulation
+            </div>
+            <div id="ad-footer-message">
+              Learn more >
+            </div>
+          </div>
+        </a>
+</div>
+
+      <div class="carousel-column col-0 col-sm-12 col-md-4 col-lg-4  col-xl-4  ">
+
+        <div class="carouselColumnHeaderDiv">
+          <img id="product-logo" src="../../../assets/carousel_images/banner_images/steico-logo-small.png" />
+          <i id="logo-caption">{{item.productName}}</i><br />
+          {{item.productDescription}}
+        </div>
+
+        <div>
+          <img src=  {{item.imageUrl}}/>
+
+          <div id="carouselColumnFooterLogos">
+            <img src="../../../assets/carousel_images/banner_images/logos/fsc-simple-logo.jpg" />
+            <img src="../../../assets/carousel_images/banner_images/logos/pefc-simple-logo.jpg" />
+            <img src="../../../assets/carousel_images/banner_images/logos/steico-cert.png" />
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<!--
+        <div>
+          Over 30 years of expertise in the timber trade, happy to advise <br />
+          Products sourced world-wide for high quality and value<br/>
+          Stringent certifications<br />
+          Sustainabily and eco-friendly products<br />
+          Next day delivery<br />
+          100% Irish owned <br />
+        </div>-->

@@ -1,0 +1,98 @@
+<div id="mySidenav" class="customSideNav">
+
+  <div class="mySidenavHeaderDiv">
+    PRODUCTS
+    <button type="button" (click)='closeNav()' class="closebtn">
+      <i class="fa fa-times-thin fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <!--above is from is from https://www.w3schools.com/howto/howto_js_sidenav.asp
+      below is custom code -->
+
+  <div class="verticalMenu">
+
+    <div class="productCategory">
+      <a [routerLink]=" ['/panel-products']" (click)="recordClickedLink()">
+        <div class="menuLevel1" id="panelProducts">
+          PANEL PRODUCTS
+        </div>
+      </a>
+
+      <a [routerLink]=" ['/plywood']">
+        <div class="menuLevel2">
+          <div class="product">Plywood</div>
+        </div>
+      </a>
+
+      <div class="menuLevel3 products">
+        <a [routerLink]=" ['/hardwood-ply']"><div class="product">Hardwood</div></a>
+        <a [routerLink]=" ['/softwood-ply']"><div class="product">Softwood</div></a>
+        <a [routerLink]=" ['/products/pourform']"><div class="product">Formwork</div></a>
+        <a [routerLink]=" ['/birch']"><div class="product">Birch Plywood</div></a>
+      </div>
+
+      <div class="menuLevel2">
+        <a [routerLink]=" ['/products/durelisdek-peel-clean-mr-t-and-g4']"><div class="product">Durelisdek </div></a>
+        <!-- <a [routerLink]=" ['/mdf']"><div class="product">MDF </div></a>-->
+        <a [routerLink]=" ['/products/osb3-square-edge-and-t-and-g']"><div class="product">OSB </div></a>
+      </div>
+
+    </div>
+
+    <div class="productCategory">
+      <a [routerLink]=" ['/insulation']">
+        <div class="menuLevel1">
+          INSULATION
+        </div>
+      </a>
+
+      <div class="menuLevel2">
+        <a [routerLink]="['/products/therm']"><div class="product">Steico Therm Dry</div></a>
+      </div>
+    </div>
+
+    <div class="productCategory">
+      <a [routerLink]=" ['/i-joists']">
+        <div class="menuLevel1">
+          JOISTS
+        </div>
+      </a>
+
+      <div class="menuLevel2">
+        <a [routerLink]="['/products/i-joists']"><div class="product">I-Joists</div></a>
+        <a [routerLink]="['/products/lvl']"><div class="product">LVL</div></a>
+        <a [routerLink]="['/products/glulam']"><div class="product">Glulam</div></a>
+      </div>
+    </div>
+
+    <div class="productCategory">
+      <a [routerLink]=" ['/softwood-timber']">
+        <div class="menuLevel1">
+          TIMBER PRODUCTS
+        </div>
+      </a>
+
+      <div class="menuLevel2">
+        <a [routerLink]="['/products/timber-decking']"><div class="product">Decking</div></a>
+        <a [routerLink]="['/products/kd-reg']"><div class="product">Kiln Dried / KD Reg</div></a>
+        <a [routerLink]="['/products/long-lengths']"><div class="product">Long Lengths</div></a>
+        <a [routerLink]="['/products/scaffolding']"><div class="product">Scaffolding</div></a>
+        <a [routerLink]="['/products/new-sleepers-tanalised']"><div class="product">Sleepers</div></a>
+        <a [routerLink]="['/products/tan-treated']"><div class="product">Treated</div></a>
+      </div>
+    </div>
+
+
+
+    <!--   <a [routerLink]=" ['/decking']">
+      <div class="menuLevel1">
+        Decking
+      </div>
+    </a>
+        -->
+
+
+  </div>
+</div>
+

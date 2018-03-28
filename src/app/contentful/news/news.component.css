@@ -1,0 +1,6 @@
+.newsArticleImage, .videoContainer {
+  max-width: 480px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

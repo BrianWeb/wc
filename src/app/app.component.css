@@ -1,0 +1,351 @@
+
+/*-----Logo-----*/
+
+#logoCol {
+  padding: 15px;
+
+}
+
+#wcLogo {
+
+  max-width: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/*-----/Logo-----*/
+
+/*not sure if below does anything - check it*/
+#companyText,
+.inline {
+  display: inline;
+}
+
+#companyDiv,
+#pageHeadingText {
+  font-family: century-gothic, Muli, 'Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+/*-----------Contact Columns-------------------*/
+
+.contactCol {
+  line-height: 40px;
+  padding: 10px;
+  font-size: 1.2em;
+  /*nice orange background-color: #E62E00;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .contactCol,
+  .contactCol a,
+  .contactCol a:link,
+  .contactCol a:active,
+  .contactCol a:hover,
+  .contactCol a:visited {
+    color: forestgreen;
+  }
+
+.menuLevel2:hover,
+.menuLevel2:link,
+.menuLevel2:active,
+.menuLevel2:hover,
+.menuLevel2:visited {
+  background-color: #C2CEDA;
+}
+
+
+@media only screen and (max-width:767px) {
+  .contactCol {
+    margin-top: 2px;
+    background-color: #E8ECF1;
+  }
+  /*
+    #contactCol1 {
+        border-bottom: 4px solid white;
+        border-left: 4px solid white;
+        border-right: 2px solid white;
+    }
+    #contactCol2 {
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+        border-left: 2px solid white;
+    }*/
+}
+
+
+
+.contactCol:hover {
+  transition: .3s background-color;
+  color: #006747;
+}
+
+.contactText {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+
+.contactText,
+.keyHeader {
+  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width:200px) {
+  .contactText,
+  .thumbnailDescription {
+    display: none;
+  }
+
+  /*.col-xs-1 .col-xs-2 .col-xs-3 .col-xs-4 .col-xs-5 .col-xs-6 .col-xs-7 .col-xs-8 .col-xs-9 .col-xs-10 .col-xs-11 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }*/
+}
+
+.icon_sosa {
+  vertical-align: middle;
+  font-size: 2.2em;
+}
+
+
+
+
+/*-----------/Contact Columns-------------------*/
+
+.thumbnailDescription {
+  display: none;
+}
+
+#allContentUnderNavBar {
+  background-color: white;
+}
+
+
+/*-------Nav Bar-----------*/
+
+.navBarCol {
+ 
+}
+
+  /*@media only screen and (orientation: landscape) {
+  .navBarCol {
+    border-left: .5px solid #E8ECF1;
+  }
+}
+
+    /*
+.navBarCol:hover {
+  background-color: #006747;
+}*/
+
+
+.navBarCol .fa {
+  font-size: 2.1em;
+  color: white;
+  top: 5px;
+  text-align: right;
+}
+
+  .navBarCol .fa:active,
+  .navBarCol .fa:hover,
+  .navBarCol .fa a:visited {
+    color: white;
+  }
+
+  /*
+@media only screen and (max-width:576px) { /*<576px is Boostrap's 'xs' breakpoint, which in this app in when everything gets stacked in rows*/
+
+  /*
+  .borderTopAndBottom {
+    border-top: 1px solid #E8ECF1;
+    border-bottom: 1px solid #E8ECF1;
+  }
+}*/
+
+@media only screen and (min-width:576px) and (max-width:900px) { /*<576px is Boostrap's 'md' breakpoint*/
+  .navBarCol {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width:576px) {
+  .fa-chevron-down,
+  .fa-chevron-up {
+    display: none;
+  }
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  text-justify: inter-word;
+  /*
+    display: flex;  or inline-flex 
+  display: -ms-flexbox;
+  align-content: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;*/
+  background-color: forestgreen;
+  padding: .7em;
+  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+}
+
+  div.scrollmenu a {
+    /* display: flex;  or inline-flex */
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    /*text-justify: inter-word;*/
+    font-size: 2.2em;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+    div.scrollmenu h1,
+    div.scrollmenu h2,
+    div.scrollmenu h3,
+    div.scrollmenu h4,
+    div.scrollmenu a:link,
+   
+    div.scrollmenu a:visited {
+      color: white;
+    }
+
+    div.scrollmenu a:active,
+    div.scrollmenu a:hover {
+      color:whitesmoke;
+    }
+    /*-------/Nav Bar-----------*/
+    /*Messy down here:*/
+    .noPadding-right {
+      padding-right: 0;
+    }
+
+
+
+.noPadding-left {
+  padding-left: 0;
+}
+
+
+#routerContainer {
+  
+}
+
+#searchBox {
+  color: darkslategrey;
+  padding-left: 5px;
+  width: 300px;
+}
+
+@media only screen and (max-width:768px) {
+  #searchBox {
+    margin-top: 10px;
+  }
+}
+
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.noPadding {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+@media only screen and (orientation: portrait) { /*<576px is Boostrap's 'xs' breakpoint, which in this app in when everything gets stacked in rows*/
+
+  .myFlex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+.div-wrapper {
+  white-space: nowrap;
+  max-width: 99%;
+}
+
+.keepTogether {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 3%;
+  white-space: normal;
+}
+
+
+/*assciations and logos divs*/
+
+#searchDiv {
+  margin-top: 15px;
+  color: #006747;
+  padding-right: 10px;
+}
+
+#productThumbnailsDiv {
+  margin: 15px;
+}
+
+.thumbnailCol {
+  padding: 15px;
+  /*border: 10px solid #E8ECF1;*/
+}
+
+#productThumbnails img {
+  object-fit: cover;
+}
+
+.productThumbnailText {
+  padding: 10px;
+  background-color: white;
+  height: 150px;
+}
+/*
+@media only screen and (min-width:576px) {
+  .productThumbnailText {
+    height: 265px;
+  }
+}
+
+
+@media only screen and (min-width:768px) {
+  .productThumbnailText {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .productThumbnailText {
+    height: 150px;
+  }
+}
+
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+
+}
+
+
+
+.paddingTop10{
+  padding-top: 30px;
+}
+  */

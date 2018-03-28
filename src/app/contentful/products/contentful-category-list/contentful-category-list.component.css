@@ -1,0 +1,145 @@
+#searchBoxDiv {
+  /* margin: 20px;*/
+  width: 100%;
+  align-items: center;
+  display: inline-block;
+}
+
+#searchDiv {
+  /* margin-top: 15px;*/
+  color: #006747;
+}
+
+
+.openbtn {
+  background-color: white;
+  margin-right: 15px;
+  border: 1px solid #C2CEDA;
+  color: #444d54;
+}
+
+@media only screen and (min-width:576px) {
+  .openbtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:576px) {
+  #searchDiv {
+    padding: 10px;
+  }
+}
+
+
+
+#thumbnailsDiv {
+  border: 10px solid #E8ECF1;
+}
+
+
+
+
+#productThumbnailsDiv img {
+  max-height: 165px;
+}
+
+@media only screen and (min-width:1800px) {
+  #productThumbnailsDiv img {
+    max-height: 250px;
+  }
+}
+
+.productThumbnailDescription {
+  padding: 10px;
+  background-color: white;
+  color: #6685A3;
+}
+
+.thumbnailCol {
+  padding: 15px;
+  /*border: 10px solid #E8ECF1;*/
+}
+
+#productThumbnails img {
+  object-fit: cover;
+}
+
+.productThumbnailText {
+  padding: 10px;
+  background-color: white;
+}
+
+.productNameAndDesc {
+
+}
+
+@media only screen and (min-width:576px) and (max-width:899px) {
+  .productNameAndDesc {
+    height: 200px;
+  }
+}
+
+
+
+@media only screen and (min-width:900px) and (max-width:1500px) { 
+  .productNameAndDesc {
+    height: 160px;
+  }
+
+  .categoryGroupInnerContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width:1500px)  {
+  .productNameAndDesc {
+    height: 100px;
+  }
+}
+
+.productName {
+  font-size: 1.1em;
+  color: #6685A3;
+  font-weight: 600;
+  padding-bottom: .4em;
+}
+
+.productDescription {
+  color: #444d54;
+}
+
+
+.moreLink {
+  text-align: right;
+  color: #6685A3;
+  background-color: white;
+  padding: 5px;
+}
+
+  .moreLink .fa {
+    padding: 5px;
+  }
+
+
+
+.categoryGroup:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+.categoryGroup:nth-child(odd) {
+  background-color: #eff2f5;
+}
+
+
+.categoryGroupInnerContainer {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+
+.customCategoryHeading {
+  font-size: 1.2em;
+  color: dimgray;
+  padding: 10px;
+}
