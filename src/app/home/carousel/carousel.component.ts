@@ -38,7 +38,7 @@ export class CarouselComponent {
             fileName: 'i_joist_home',
             brandName: 'STEICO',
             productName: 'I-Joists',
-            productDescription: 'Building system for floors & roofs',
+            productDescription: 'For floors & roofs',
             imageDescription: 'roof application',
             imageUrl: '../../../assets/carousel_images/banner_images/steico_i-joist.jpg',
             productUrl: 'i-joists'

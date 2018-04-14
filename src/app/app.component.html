@@ -1,23 +1,18 @@
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-
-
 
 <div id="entirePage" ng-controller="ScrollController">
   <!--not given container-fluid class so that the background colour won't have padding-->
   <!--NavBar-->
   <div class="row justify-content-center" id="topRow">
 
-    <div class="col-8 col-sm-7 col-md-3 col-lg-3 col-xl-2" id="logoCol">
+    <div class="col-8 col-sm-7 col-md-3 col-lg-3 col-xl-3" id="logoCol">
       <a href="welcome">
         <img id="wcLogo" src="../assets/wc_logo/WC logo Small No Background.png" />
       </a>
     </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 offset-md-1 offset-lg-2 offset-xl-4 noPadding centerText contactCol" id="contactCol1">
-
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 offset-md-1 offset-lg-2 offset-xl-3 noPadding centerText contactCol" id="contactCol1">
       <a href="mailto:tms@tms.ie">
         <span>
           <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
@@ -27,7 +22,6 @@
     </div>
 
     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 noPadding centerText contactCol" id="contactCol2">
-
       <a href="callto:0035318408388">
         <span>
           <i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp;
@@ -48,6 +42,9 @@
         <!--Products-->
         <!--<a data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">-->
 
+        <a class="one" [routerLink]=" ['/welcome']">
+          Home
+        </a>
 
         <a class="one" [routerLink]=" ['/products']">
           Products

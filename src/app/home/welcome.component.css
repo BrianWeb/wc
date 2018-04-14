@@ -8,7 +8,7 @@ article:nth-child(even) {
 }
 
 #welcomeText {
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "segoe-ui", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 100;
@@ -37,8 +37,8 @@ article:nth-child(even) {
   }
 
 #companySellingPoints {
-  background-color: #3b5998;
-  color:white;
+  background-color: #24365b;
+  color: white;
   font-size: 1.2em;
   display: flex;
   align-items: center;
@@ -47,7 +47,11 @@ article:nth-child(even) {
   padding-bottom: 40px;
 }
 
-@media only screen and (min-width:576px) and (max-width:660px){
+.sellingPoint {
+  padding:7px;
+}
+
+@media only screen and (min-width:576px) and (max-width:660px) {
   #companySellingPoints {
     font-size: 1.1em;
   }
@@ -104,7 +108,7 @@ ngb-carousel {
 }
 
 
-.productSvgAndHeader {
+.productSvgAndHeader, .viewAllProductsLink {
   background-color: #499933;
   /*background-color: #6e7b91;*/
   color: white;
@@ -114,9 +118,13 @@ ngb-carousel {
   padding-bottom: 1.2em;
 }
 
+  .viewAllProductsLink a{
+    color:white; /*Boostrap override*/
+  }
 
-@media only screen and (min-width:768px) and (max-width:992px){
-  .productSvgAndHeader {
+
+  @media only screen and (min-width:768px) and (max-width:992px) {
+    .productSvgAndHeader {
     height: 302px; /*at this view point 'Panel Products' and 'Timber Products' are taller than 'Insulation' and 'Joists' because they have two words. This makes them all the same height*/
   }
 }
@@ -178,7 +186,7 @@ svg {
 }
 
 #sustainabilityIntroTextCol {
-  padding-top: 10px;
+  padding : 10px;
   color: #002766;
 }
 

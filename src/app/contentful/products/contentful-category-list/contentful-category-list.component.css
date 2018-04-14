@@ -40,7 +40,7 @@
 
 
 #productThumbnailsDiv img {
-  max-height: 165px;
+  height: 200px;
 }
 
 @media only screen and (min-width:1800px) {
@@ -73,7 +73,7 @@
 
 }
 
-@media only screen and (min-width:576px) and (max-width:899px) {
+@media only screen and (min-width:576px)  {
   .productNameAndDesc {
     height: 200px;
   }
@@ -81,11 +81,8 @@
 
 
 
-@media only screen and (min-width:900px) and (max-width:1500px) { 
-  .productNameAndDesc {
-    height: 160px;
-  }
-
+@media only screen and (min-width:1401px) and (max-width:1500px) { 
+ 
   .categoryGroupInnerContainer {
     padding-left: 40px;
     padding-right: 40px;
@@ -95,6 +92,10 @@
 @media only screen and (min-width:1500px)  {
   .productNameAndDesc {
     height: 100px;
+  }
+  .categoryGroupInnerContainer {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

@@ -54,7 +54,7 @@
   <ng-template ngbSlide *ngFor="let item of items">
     <div class="row no-gutters">
 
-      <div id="carousel-images" class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+      <div id="carousel-images" class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-xl-1">
 
         <a [routerLink]=" ['/', item.productUrl]">
 
@@ -62,7 +62,7 @@
           <img src="../../../assets/carousel_images/{{item.fileName}}.jpg" />
           <div class="carousel-caption">
             <!--<div class="carousel-caption d-none d-sm-block">
-      -see https://getbootstrap.com/docs/4.0/utilities/display/ for above docs on d-none, d-sm-block-->
+            -see https://getbootstrap.com/docs/4.0/utilities/display/ for above docs on d-none, d-sm-block-->
             <!--<i id="carousel-caption-heading">{{item.brandName + " " + item.productName}}</i> <br />-->
             <div id="ad-sub-message">
               Steico's latest
@@ -76,9 +76,9 @@
             </div>
           </div>
         </a>
-</div>
+      </div>
 
-      <div class="carousel-column col-0 col-sm-12 col-md-4 col-lg-4  col-xl-4  ">
+      <div class="carousel-column col-0 col-sm-12 col-md-4 col-lg-4  col-xl-3  ">
 
         <div class="carouselColumnHeaderDiv">
           <img id="product-logo" src="../../../assets/carousel_images/banner_images/steico-logo-small.png" />
@@ -87,7 +87,7 @@
         </div>
 
         <div>
-          <img src=  {{item.imageUrl}}/>
+          <img src={{item.imageUrl}} />
 
           <div id="carouselColumnFooterLogos">
             <img src="../../../assets/carousel_images/banner_images/logos/fsc-simple-logo.jpg" />
