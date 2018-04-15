@@ -9,13 +9,9 @@
     <div id="category-list-Page">
       <!-- <div id="searchDiv">
         <div class='row no-gutters justify-content-center'>
-
-
           <button type="button" (click)='openNav()' class="openbtn">
             <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
           </button>
-
-
         </div>
       </div>
             -->
@@ -47,7 +43,7 @@
                  Contentful code <a md-line [routerLink]="['/products', product.fields.slug]">{{product.fields.productName}}</a>
                 </div>
               -->
-              <div class="thumbnailCol col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 " *ngFor="let product of productsForCategories[category.sys.id]">
+              <div class="thumbnailCol col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3" *ngFor="let product of productsForCategories[category.sys.id]">
 
                 <a md-line [routerLink]="['/products', product.fields.slug]">
                   <div class="thumbnail">

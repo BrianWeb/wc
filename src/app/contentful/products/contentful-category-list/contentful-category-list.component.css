@@ -30,14 +30,9 @@
   }
 }
 
-
-
 #thumbnailsDiv {
   border: 10px solid #E8ECF1;
 }
-
-
-
 
 #productThumbnailsDiv img {
   height: 220px;
@@ -76,12 +71,15 @@
 }
 
 
-
-
-
-
 @media only screen and (min-width:1401px) and (max-width:1500px) { 
  
+  .categoryGroupInnerContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width:1500px) {
   .categoryGroupInnerContainer {
     padding-left: 40px;
     padding-right: 40px;
@@ -100,12 +98,6 @@
 
 */
 
-@media only screen and (min-width:1500px) {
-  .categoryGroupInnerContainer {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
 
 .productName {
   font-size: 1.1em;
@@ -116,6 +108,7 @@
 
 .productDescription {
   color: #444d54;
+
 }
 
 

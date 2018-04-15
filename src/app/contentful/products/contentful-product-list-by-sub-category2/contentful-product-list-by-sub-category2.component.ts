@@ -10,7 +10,7 @@ import { ActivatedRoute, ParamMap, Router } from '@angular/router'; //ActivedRou
 @Component({
   selector: 'app-contentful-product-list-by-sub-category2',
   templateUrl: './contentful-product-list-by-sub-category2.component.html',
-  styleUrls: ['../contentful-product-list/contentful-product-list.component.css', '../contentful-category-list/contentful-category-list.component.css']
+  styleUrls: ['../contentful-category-list/contentful-category-list.component.css']
 })
 export class ContentfulProductListBySubCategory2Component implements OnInit {
     searchField: string;
