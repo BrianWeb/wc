@@ -25,7 +25,7 @@
 
 #companyDiv,
 #pageHeadingText {
-  font-family: century-gothic, Muli, 'Franklin Gothic Medium', 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  font-family: century-gothic, Muli, 'Franklin Gothic Medium', roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 /*-----------Contact Columns-------------------*/
 
@@ -90,7 +90,7 @@
 
 .contactText,
 .keyHeader {
-  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
 @media only screen and (max-width:200px) {
@@ -173,8 +173,7 @@ div.scrollmenu {
   text-justify: inter-word;
   background-color: forestgreen;
   padding-top: .3em;
-  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
- 
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
 }
 
   div.scrollmenu a {

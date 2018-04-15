@@ -10,6 +10,11 @@
   src: url('fonts/segoe-ui-light.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'roboto-condensed-light';
+  src: url('fonts/roboto-condensed-light.ttf') format('truetype');
+}
+
 img {
   width: 100%;
 }
@@ -82,8 +87,8 @@ li {
   line-height: 1.3em;
 }
 
-h1{
-  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+h1 {
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
   margin: 0;
   /*color: #E62E00; Orange */
 }
@@ -106,7 +111,7 @@ h1 {
   }
 
 h2 {
-  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
   font-size: 1.8em;
   color: #3b5998;
   margin-top: 0px;
@@ -115,7 +120,7 @@ h2 {
 
 
 h3 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",roboto-condensed-light,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.1em;
   color: forestgreen;
   padding-top: 20px;
@@ -255,7 +260,7 @@ video, iframe {
 }
 
 .articleTitle {
-  font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+  font-family: roboto-condensed-light, Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
   font-size: 2.7em;
   color: #444d54;
   padding-top: 20px;
