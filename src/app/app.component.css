@@ -1,5 +1,8 @@
 
 /*-----Logo-----*/
+#topRow {
+  background-color:#fafcff;
+} 
 
 #logoCol {
   padding: 15px;
@@ -126,7 +129,7 @@
 .navBarCol {
 }
 
-  /*@media only screen and (orientation: landscape) {
+/*@media only screen and (orientation: landscape) {
   .navBarCol {
     border-left: .5px solid #E8ECF1;
   }
@@ -135,7 +138,7 @@
     /*
 .navBarCol:hover {
   background-color: #006747;
-}*/
+}
 
 
   .navBarCol .fa {
@@ -168,63 +171,54 @@ div.scrollmenu {
   width: 100%;
   text-align: center;
   text-justify: inter-word;
-  /*
-    display: flex;  or inline-flex 
-  display: -ms-flexbox;
-  align-content: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;*/
   background-color: forestgreen;
-  padding: .7em;
+  padding-top: .3em;
   font-family: 'Roboto Condensed', Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+ 
 }
 
-@media only screen and (min-width:768px) {
-  div.scrollmenu {
-    white-space: normal;
+  div.scrollmenu a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: .2em solid transparent;
+  }
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+  div.scrollmenu a {
+    font-size: 1.3em;
   }
 }
 
-
-div.scrollmenu a {
-  /* display: flex;  or inline-flex */
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  /*text-justify: inter-word;*/
-  font-size: 2em;
-  color: white;
- padding-left: 2%;
-  padding-right: 2%;
-}
-
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:992px) and (max-width:1200px) {
   div.scrollmenu a {
     font-size: 1.6em;
   }
 }
 
-  div.scrollmenu h1,
-  div.scrollmenu h2,
-  div.scrollmenu h3,
-  div.scrollmenu h4,
-  div.scrollmenu a:link,
-  div.scrollmenu a:visited {
-    color: white;
-  }
 
-  div.scrollmenu a:active,
-  div.scrollmenu a:hover {
-    color: whitesmoke;
-  }
-
-
-@media only screen and (min-width:576px) and (max-width:900px) { /*<576px is Boostrap's 'md' breakpoint*/
-  div.scrollmenu a {
-
-  }
+div.scrollmenu a:hover, a:focus, a:active, a:target {
+  border-bottom: .2em solid #52ac39;
 }
+/*
+div.scrollmenu a:active,
+div.scrollmenu a:hover {
+  color: whitesmoke;
+}
+
+  div.scrollmenu a:link,
+div.scrollmenu a:visited {
+  color: white;
+}
+  */
+
+
+
+/* border under links on hover */
 
 /*-------/Nav Bar-----------*/
 
@@ -326,38 +320,3 @@ div.scrollmenu a {
   background-color: white;
   height: 150px;
 }
-/*
-@media only screen and (min-width:576px) {
-  .productThumbnailText {
-    height: 265px;
-  }
-}
-
-
-@media only screen and (min-width:768px) {
-  .productThumbnailText {
-    height: 200px;
-  }
-}
-
-@media only screen and (min-width:992px) {
-  .productThumbnailText {
-    height: 150px;
-  }
-}
-
-
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
-
-}
-
-
-
-.paddingTop10{
-  padding-top: 30px;
-}
-  */

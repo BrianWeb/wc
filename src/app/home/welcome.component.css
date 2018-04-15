@@ -8,7 +8,7 @@ article:nth-child(even) {
 }
 
 #welcomeText {
-  font-family: "segoe-ui", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: segoe-ui, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 100;
@@ -23,6 +23,7 @@ article:nth-child(even) {
 #welcomeTextHeader {
   font-size: 45px;
   padding-bottom: 15px;
+  font-family: segoe-ui-light, segoe-ui, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 #welcomeTextBody {

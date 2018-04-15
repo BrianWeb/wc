@@ -5,6 +5,11 @@
   src: url('fonts/segoe-ui.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'segoe-ui-light';
+  src: url('fonts/segoe-ui-light.ttf') format('truetype');
+}
+
 img {
   width: 100%;
 }
