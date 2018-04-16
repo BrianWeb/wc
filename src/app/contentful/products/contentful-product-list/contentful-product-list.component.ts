@@ -7,8 +7,7 @@ import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-contentful-product-list',
-  //templateUrl: './contentful-product-list.component.html',
-  templateUrl: '../contentful-category-list/contentful-category-list.component.html',
+ templateUrl: './contentful-product-list.component.html',
   styleUrls: ['../contentful-category-list/contentful-category-list.component.css']
 
 })
