@@ -12,7 +12,7 @@ export class CarouselComponent {
 
   constructor() {
     this.items = [
-        {
+        /*{
             fileName: 'steico_therm_application',
             brandName: 'STEICO',
             productName: 'Therm',
@@ -27,7 +27,7 @@ export class CarouselComponent {
             keyFeature5: 'Save Energy',
             keyFeature6: 'Stay Green '
         },
-        /*{
+        {
             fileName: 'steico_universal_application_2',
             brandName: 'STEICO',
             productName: 'Universal Dry',
