@@ -26,11 +26,13 @@
     </div>
   </a>
 
+
+
   <div *ngIf='product'>
 
     <div class='row justify-content-center no-gutter' id="productDetailsRow">
 
-      <div class="col-12 col-sm-12 col-md-7 col-lg-7 offset-xl-1 col-xl-6 ">
+      <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
 
         <article>
 
@@ -44,7 +46,6 @@
             <br />
           </div>
 
-          <!--
           <div class="row">
             <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
               <div *ngIf="images">
@@ -61,67 +62,39 @@
                    [title]='product.productName' [alt]='product.productName'>
             </div>
           </div>
-              -->
-          <ngb-carousel>
-            <div *ngIf="images">
-              <ng-template ngbSlide *ngFor="let image of images">
 
-                <div id="carousel-images">
+          <div class="productDetails">
+            <div *ngIf="product.fields.keyFeature1">
+              <div class="productDetailsHeading">
+                Key Features
+              </div>
+              <div class="productDetailsText">
 
-                  <img #bp [src]='image.fields.file.url'
-                       [title]='product.productName' [alt]='product.productName'>
-                  <div class="carousel-caption">
-                    <!--<div class="carousel-caption d-none d-sm-block">
-            -see https://getbootstrap.com/docs/4.0/utilities/display/ for above docs on d-none, d-sm-block-->
-                    <!--<i id="carousel-caption-heading">{{item.brandName + " " + item.productName}}</i> <br />-->
-                    <div id="ad-sub-message">
-                   
-                    </div>
-                    <div id="ad-main-message">
-                 
-                    </div>
-                    <div id="ad-footer-message">
-                    
-                    </div>
-                  </div>
-                </div>
-              </ng-template>
-            </div>
-          </ngb-carousel>
-
-
-            <div class="productDetails">
-              <div *ngIf="product.fields.keyFeature1">
-                <div class="productDetailsHeading">
-                  Key Features
-                </div>
-                <div class="productDetailsText">
-
-                  <div class="productDetailsTextParagraph">
-                    <ul>
-                      <li *ngIf="product.fields.keyFeature1">{{ product.fields.keyFeature1}} </li>
-                      <li *ngIf="product.fields.keyFeature2">{{ product.fields.keyFeature2}} </li>
-                      <li *ngIf="product.fields.keyFeature3">{{ product.fields.keyFeature3}} </li>
-                      <li *ngIf="product.fields.keyFeature4">{{ product.fields.keyFeature4}} </li>
-                      <li *ngIf="product.fields.keyFeature5">{{ product.fields.keyFeature5}} </li>
-                      <li *ngIf="product.fields.keyFeature6">{{ product.fields.keyFeature6}} </li>
-                      <li *ngIf="product.fields.keyFeature7">{{ product.fields.keyFeature7}} </li>
-                      <li *ngIf="product.fields.keyFeature8">{{ product.fields.keyFeature8}} </li>
-                      <li *ngIf="product.fields.keyFeature9">{{ product.fields.keyFeature9}} </li>
-                      <li *ngIf="product.fields.keyFeature10">{{ product.fields.keyFeature10}} </li>
-                      <li *ngIf="product.fields.keyFeature11">{{ product.fields.keyFeature11}} </li>
-                      <li *ngIf="product.fields.keyFeature12">{{ product.fields.keyFeature12}} </li>
-                    </ul>
-                  </div>
+                <div class="productDetailsTextParagraph">
+                  <ul>
+                    <li *ngIf="product.fields.keyFeature1">{{ product.fields.keyFeature1}} </li>
+                    <li *ngIf="product.fields.keyFeature2">{{ product.fields.keyFeature2}} </li>
+                    <li *ngIf="product.fields.keyFeature3">{{ product.fields.keyFeature3}} </li>
+                    <li *ngIf="product.fields.keyFeature4">{{ product.fields.keyFeature4}} </li>
+                    <li *ngIf="product.fields.keyFeature5">{{ product.fields.keyFeature5}} </li>
+                    <li *ngIf="product.fields.keyFeature6">{{ product.fields.keyFeature6}} </li>
+                    <li *ngIf="product.fields.keyFeature7">{{ product.fields.keyFeature7}} </li>
+                    <li *ngIf="product.fields.keyFeature8">{{ product.fields.keyFeature8}} </li>
+                    <li *ngIf="product.fields.keyFeature9">{{ product.fields.keyFeature9}} </li>
+                    <li *ngIf="product.fields.keyFeature10">{{ product.fields.keyFeature10}} </li>
+                    <li *ngIf="product.fields.keyFeature11">{{ product.fields.keyFeature11}} </li>
+                    <li *ngIf="product.fields.keyFeature12">{{ product.fields.keyFeature12}} </li>
+                  </ul>
                 </div>
               </div>
             </div>
+          </div>
 
-</article>
+        </article>
 
       </div><!--/col-->
 
-      <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
 
         <article>
           <div class="productDetails">
@@ -237,9 +210,6 @@
                     </div>
 
 
-
-
-
                     <!--  <a target="_blank" href={{product.fields.specificationsSheet[0].fields.file.url}}>
                       Download {{product.fields.specificationsSheet[0].fields.title}}
                     </a>-->
@@ -335,7 +305,6 @@
 
 </div><!-- /*ngIf='product' -->
 
-<!--
 <div *ngIf="images">
   <div *ngFor="let image of images">
     <div class="row noPadding">
@@ -348,7 +317,7 @@
       <!--<div class="column">
         <img src="https://dawm7kda6y2v0.cloudfront.net/uploads/2018/03/GettyImages-932975936-804x450@2x.jpg" alt="Fjords" onclick="openImg(this);">
       </div>-->
-<!--
+
       <div class="column">
         <div *ngIf='showImage'>
           Show a big image below if Thumbnail above is clicked: <br />

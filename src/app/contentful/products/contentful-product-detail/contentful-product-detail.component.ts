@@ -26,16 +26,42 @@ export class ContentfulProductDetailComponent implements OnInit {
     product: Entry<any>;
     errorMessage: string; //BW/DK code
     images: any[]; //BW code
-    type1Applications: any[]; //BW code
+    type1Applications: any[]; //BW code to declare a new array type of returned entries from the 'type 1 Applications' array in Contentful
     type2Applications: any[]; //BW code
     specificationsSheets: any[]; //BW code
+    productImages: [any];
+    showImage: boolean = false;
+    bptest: string;
 
+    // --- Gallery Variables -----
+    //const expandImg = document.getElementById("expandedImg");
+    //const imgText = this.imgText = document.getElementById("imgtext");
+
+
+    // --- /Gallery Variables -----
 
     constructor(
         private ContentfulService: ContentfulService,
         private route: ActivatedRoute,
         private _router: Router // for the back button
-    ) { }
+    ) {
+        this.productImages = [
+            {
+                fileName: 'steico_therm_application',
+                brandName: 'STEICO',
+                productName: 'Therm',
+                productDescription: 'Rigid insulation',
+                imageDescription: 'roof application',
+                imageUrl: '../../../assets/carousel_images/banner_images/stecio-therm-dry.jpg',
+                productUrl: 'insulation',
+                keyFeature1: 'Keep Cold Out',
+                keyFeature2: 'Regulate Temperature',
+                keyFeature3: 'Reduce Noise',
+                keyFeature4: 'Reduce Moisture',
+                keyFeature5: 'Save Energy',
+                keyFeature6: 'Stay Green ',
+            }]
+    }
 
     ngOnInit() {
         this.route.paramMap
@@ -44,7 +70,7 @@ export class ContentfulProductDetailComponent implements OnInit {
                 this.product = product;
                 //this.jsonProduct = product.fields.brand.fields.companyName;
                 this.images = product.fields.image;
-                this.type1Applications = product.fields.type1Applications;
+                this.type1Applications = product.fields.type1Applications; //populate the new type1Applications array with fields from the type1Applications array in Contentful
                 this.type2Applications = product.fields.type2Applications;
                 this.specificationsSheets = product.fields.specificationsSheet;
             },
@@ -77,8 +103,7 @@ export class ContentfulProductDetailComponent implements OnInit {
 
     getImages() {
         var newArray = this.images.map
-            (function (extractArrayImgUrls)
-            {
+            (function (extractArrayImgUrls) {
                 return extractArrayImgUrls.fields.file.url;
             })
     }
@@ -134,5 +159,35 @@ export class ContentfulProductDetailComponent implements OnInit {
         this._router.navigate(['/products']);
     }
 
- 
+    wheel(): void {
+        window.alert("you're using the scroll wheel");
+    }
+    openDialog(): void {
+        window.alert("Shithouse");
+    }
+
+    toggleImage(img) {
+        this.showImage = !this.showImage;
+    }
+
+
+    thumbnailClicked(): void {
+        this.showImage = !this.showImage;
+    }
+
+
+    //myFunction(imgs): void {
+
+    // Get the expanded image
+
+    // Get the image text
+
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    //this.expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    //this.imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    //this.expandImg.parentElement.style.display = "block";
+    //}
 }
+
