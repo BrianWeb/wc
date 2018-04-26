@@ -20,10 +20,19 @@
       </a>
     </div>
 
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 offset-md-1 offset-lg-2 offset-xl-3 noPadding centerText " id="contactCol1">
-    <!--above had class of contactCol-->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 offset-md-1 offset-lg-2 offset-xl-3 noPadding centerText contactCol" id="contactCol1">
+      <!--above had class of contactCol-->
+      <a href="mailto:tms@tms.ie">
+        <span>
+          <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+          <span class="contactText">
+            <span [innerHTML]="emailAddress"></span>
+          </span>
+        </span>
+      </a>
     </div>
 
+   
     <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 noPadding centerText contactCol" id="contactCol2">
       <!--above had class of col-sm-6-->
       <a href="callto:0035318408388">
@@ -46,11 +55,11 @@
         <!--Products-->
         <!--<a data-toggle="collapse" href="#collapsibleProjectsDiv" aria-expanded="false" aria-controls="collapsibleProjectsDiv">-->
 
-       
-          <a class="" [routerLink]=" ['/welcome']">
-            Home
-          </a>
-       
+
+        <a class="" [routerLink]=" ['/welcome']">
+          Home
+        </a>
+
         <a class="" [routerLink]=" ['/products']">
           Products
           <!--<i id="productsChevron" class="fa fa-lg fa-chevron-down pull-right" aria-hidden="true"></i>-->
@@ -120,5 +129,5 @@
     </div>
   </div>
 </div>
-   
+
 -->

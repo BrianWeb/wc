@@ -26,6 +26,7 @@ export class ContentfulProductDetailComponent implements OnInit {
     product: Entry<any>;
     errorMessage: string; //BW/DK code
     images: any[]; //BW code
+    videos: any[]; //BW code
     type1Applications: any[]; //BW code to declare a new array type of returned entries from the 'type 1 Applications' array in Contentful
     type2Applications: any[]; //BW code
     specificationsSheets: any[]; //BW code
@@ -70,6 +71,7 @@ export class ContentfulProductDetailComponent implements OnInit {
                 this.product = product;
                 //this.jsonProduct = product.fields.brand.fields.companyName;
                 this.images = product.fields.image;
+                this.videos = product.fields.video;
                 this.type1Applications = product.fields.type1Applications; //populate the new type1Applications array with fields from the type1Applications array in Contentful
                 this.type2Applications = product.fields.type2Applications;
                 this.specificationsSheets = product.fields.specificationsSheet;
@@ -105,6 +107,17 @@ export class ContentfulProductDetailComponent implements OnInit {
         var newArray = this.images.map
             (function (extractArrayImgUrls) {
                 return extractArrayImgUrls.fields.file.url;
+            })
+    }
+
+    getVideos() {
+        var newArrayVideoUrls = this.videos.map
+            (function (extractArrayVideoUrls) {
+                return extractArrayVideoUrls.fields.file.url; 
+            })
+        var newArrayVideoTitles = this.videos.map
+            (function (extractArrayVideoTitles) {
+                return extractArrayVideoTitles.fields.title;
             })
     }
 

@@ -11,5 +11,5 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  emailAddress = '&#116;&#109;&#115;&#64;&#116;&#109;' + '&#115;&#46;&#105;&#101';
 }

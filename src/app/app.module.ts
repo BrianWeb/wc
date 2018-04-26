@@ -50,8 +50,6 @@ import { NewsComponent } from './contentful/news/news.component';
 
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 
-import { RouteoneComponent } from './routeone/routeone.component';
-import { RoutetwoComponent } from './routetwo/routetwo.component';
 
 //Clarity
 //import { ClarityModule } from "@clr/angular";
@@ -77,8 +75,6 @@ import { RoutetwoComponent } from './routetwo/routetwo.component';
         ContentfulProductListBySubCategory2Component,
         NewsComponent,
         ContactFormComponent,
-        RouteoneComponent,
-        RoutetwoComponent
     ],
     imports: [
         BrowserModule,
@@ -105,9 +101,7 @@ import { RoutetwoComponent } from './routetwo/routetwo.component';
             { path: 'plural', component: ProductListComponent },
             { path: '', redirectTo: 'welcome', pathMatch: 'full' },
             //{ path: '**', redirectTo: 'welcome', pathMatch: 'full' } always put this last because according to https://angular.io/guide/router ,'The router will select this route if the requested URL doesn't match any paths for routes defined EARLIER in the configuration.' So putting it before the end means it won't check the routes after it
-            { path: 'routeone', component: RouteoneComponent },
-            { path: 'routetwo', component: RoutetwoComponent },
-            //{ path: '**', redirectTo: '/routetwo' }
+
 
         ]),
         FormsModule,

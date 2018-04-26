@@ -12,7 +12,9 @@ import { Router, NavigationEnd } from "@angular/router";  //just for Google Anal
 
 export class AppComponent {
     title: string = 'Wood Concepts';
-
+    c: string;
+    e: string;
+    unscrampledEmail: string;
 
     constructor(
         private ContentfulService: ContentfulService,
@@ -36,4 +38,11 @@ export class AppComponent {
     ngOnInit() {
         this.ContentfulService.onTitleChange(title => this.title = title)
     }
+
+
+    emailAddress = '&#116;&#109;&#115;&#64;&#116;&#109;'+'&#115;&#46;&#105;&#101';
+
+  
+
+
 }

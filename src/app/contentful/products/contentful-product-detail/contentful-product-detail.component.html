@@ -56,16 +56,16 @@
                        [title]='product.productName' [alt]='product.productName'>
                   <div class="carousel-caption">
                     <!--<div class="carousel-caption d-none d-sm-block">
-            -see https://getbootstrap.com/docs/4.0/utilities/display/ for above docs on d-none, d-sm-block-->
+                    -see https://getbootstrap.com/docs/4.0/utilities/display/ for above docs on d-none, d-sm-block-->
                     <!--<i id="carousel-caption-heading">{{item.brandName + " " + item.productName}}</i> <br />-->
                     <div id="ad-sub-message">
-                   
+
                     </div>
                     <div id="ad-main-message">
-                 
+
                     </div>
                     <div id="ad-footer-message">
-                    
+
                     </div>
                   </div>
                 </div>
@@ -73,35 +73,33 @@
             </div>
           </ngb-carousel>
 
-
-            <div class="productDetails">
-              <div *ngIf="product.fields.keyFeature1">
-                <div class="productDetailsHeading">
-                  Key Features
-                </div>
-                <div class="productDetailsText">
-
-                  <div class="productDetailsTextParagraph">
-                    <ul>
-                      <li *ngIf="product.fields.keyFeature1">{{ product.fields.keyFeature1}} </li>
-                      <li *ngIf="product.fields.keyFeature2">{{ product.fields.keyFeature2}} </li>
-                      <li *ngIf="product.fields.keyFeature3">{{ product.fields.keyFeature3}} </li>
-                      <li *ngIf="product.fields.keyFeature4">{{ product.fields.keyFeature4}} </li>
-                      <li *ngIf="product.fields.keyFeature5">{{ product.fields.keyFeature5}} </li>
-                      <li *ngIf="product.fields.keyFeature6">{{ product.fields.keyFeature6}} </li>
-                      <li *ngIf="product.fields.keyFeature7">{{ product.fields.keyFeature7}} </li>
-                      <li *ngIf="product.fields.keyFeature8">{{ product.fields.keyFeature8}} </li>
-                      <li *ngIf="product.fields.keyFeature9">{{ product.fields.keyFeature9}} </li>
-                      <li *ngIf="product.fields.keyFeature10">{{ product.fields.keyFeature10}} </li>
-                      <li *ngIf="product.fields.keyFeature11">{{ product.fields.keyFeature11}} </li>
-                      <li *ngIf="product.fields.keyFeature12">{{ product.fields.keyFeature12}} </li>
-                    </ul>
-                  </div>
+          <div class="productDetails">
+            <div *ngIf="product.fields.keyFeature1">
+              <div class="productDetailsHeading">
+                Key Features
+              </div>
+              <div class="productDetailsText">
+                <div class="productDetailsTextParagraph">
+                  <ul>
+                    <li *ngIf="product.fields.keyFeature1">{{ product.fields.keyFeature1}} </li>
+                    <li *ngIf="product.fields.keyFeature2">{{ product.fields.keyFeature2}} </li>
+                    <li *ngIf="product.fields.keyFeature3">{{ product.fields.keyFeature3}} </li>
+                    <li *ngIf="product.fields.keyFeature4">{{ product.fields.keyFeature4}} </li>
+                    <li *ngIf="product.fields.keyFeature5">{{ product.fields.keyFeature5}} </li>
+                    <li *ngIf="product.fields.keyFeature6">{{ product.fields.keyFeature6}} </li>
+                    <li *ngIf="product.fields.keyFeature7">{{ product.fields.keyFeature7}} </li>
+                    <li *ngIf="product.fields.keyFeature8">{{ product.fields.keyFeature8}} </li>
+                    <li *ngIf="product.fields.keyFeature9">{{ product.fields.keyFeature9}} </li>
+                    <li *ngIf="product.fields.keyFeature10">{{ product.fields.keyFeature10}} </li>
+                    <li *ngIf="product.fields.keyFeature11">{{ product.fields.keyFeature11}} </li>
+                    <li *ngIf="product.fields.keyFeature12">{{ product.fields.keyFeature12}} </li>
+                  </ul>
                 </div>
               </div>
             </div>
+          </div>
 
-</article>
+        </article>
 
       </div><!--/col-->
 
@@ -209,13 +207,13 @@
 
                 <div *ngIf="product.fields.specificationsSheet">
                   <div class="productDetailsHeading">
-                    Technical Specifications
+                    Technical Specifications Downloads
                   </div>
                   <div class="productDetailsText">
                     <div class="downloadLinks" *ngFor="let specificationsSheet of specificationsSheets">
                       <div>
                         <a target="_blank" href={{specificationsSheet.fields.file.url}}>
-                          Download {{specificationsSheet.fields.title}}
+                          {{specificationsSheet.fields.title}}
                         </a>
                       </div>
                     </div>
@@ -230,94 +228,88 @@
                   </div>
                 </div>
 
-
                 <div *ngIf="product.fields.technicalGuide">
                   <div class="productDetailsHeading">
-                    Technical Guide
+                    Technical Guides Downloads
                   </div>
                   <div class="productDetailsText">
                     <a target="_blank" href={{product.fields.technicalGuide[0].fields.file.url}}>
-                      Download {{product.fields.technicalGuide[0].fields.title}}
+                      {{product.fields.technicalGuide[0].fields.title}}
                     </a>
                   </div>
                 </div>
 
+                <div *ngIf="videos">
 
-                <div *ngIf="product.fields.video">
                   <div class="productDetailsHeading">
                     Video Resources
                   </div>
-                  <div class="productDetailsText">
-                    {{product.fields.video[0].fields.title}}<br /><br />
+
+                  <div *ngFor="let video of videos">
+
+                    <div class="productDetailsText">
+                      {{video.fields.title}}<br /><br />
+                    </div>
+
+                    <div class="videoContainer">
+
+                     <!-- <video controls [poster]="product.fields.video[1].fields.file.url">-->
+                      <video controls >
+                        <source [src]="video.fields.file.url" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
                   </div>
-                  <div class="videoContainer">
-
-                    <video controls [poster]="product.fields.video[1].fields.file.url">
-                      <source [src]="product.fields.video[0].fields.file.url" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!--
-                <div *ngFor="let forecast of forecasts">
-                  Image Array URL here:
-                  {{forecast.hum}}
-                </div>
-
-                <div *ngFor="let image of images">
-                  Image Array URL here:
-
-                  <img [src]='image.fields.file.url'
-                       [title]='product.productName' [alt]='product.productName'>
-
-                </div>
-
-
-                <div *ngFor="let type1Application of type1Applications">
-                  App 1:
-                  <span>{{type1Application.fields.applicationTypeInstance}}</span>
-                </div>
-
-
-                <div *ngFor="let type2Application of type2Applications">
-                  App 2:
-                  <span>{{type2Application.fields.applicationTypeInstance}}</span>
-                </div>
-
-                    -->
-                <!--
-                <div *ngFor="let category of categories"
-
-
-                        <button (click)="getThicknesses()">press</button>-->
               </div>
+
+
+              <!--
+              <div *ngFor="let forecast of forecasts">
+                Image Array URL here:
+                {{forecast.hum}}
+              </div>
+
+              <div *ngFor="let image of images">
+                Image Array URL here:
+
+                <img [src]='image.fields.file.url'
+                     [title]='product.productName' [alt]='product.productName'>
+
+              </div>
+
+
+              <div *ngFor="let type1Application of type1Applications">
+                App 1:
+                <span>{{type1Application.fields.applicationTypeInstance}}</span>
+              </div>
+
+
+              <div *ngFor="let type2Application of type2Applications">
+                App 2:
+                <span>{{type2Application.fields.applicationTypeInstance}}</span>
+              </div>
+
+                  -->
+              <!--
+              <div *ngFor="let category of categories"
+
+
+                      <button (click)="getThicknesses()">press</button>-->
             </div>
           </div>
+
         </article>
 
       </div>
 
     </div>
 
-  </div>
 
-</div><!-- /*ngIf='product' -->
+
+  </div><!-- /*ngIf='product' -->
+
+</div><!-- /product details page -->
 
 <!--
 <div *ngIf="images">
