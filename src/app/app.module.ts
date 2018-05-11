@@ -100,7 +100,7 @@ import { ContactFormComponent } from './contact/contact-form/contact-form.compon
 
             { path: 'plural', component: ProductListComponent },
             { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-            //{ path: '**', redirectTo: 'welcome', pathMatch: 'full' } always put this last because according to https://angular.io/guide/router ,'The router will select this route if the requested URL doesn't match any paths for routes defined EARLIER in the configuration.' So putting it before the end means it won't check the routes after it
+            { path: '**', redirectTo: 'welcome', pathMatch: 'full' } //always put this last because according to https://angular.io/guide/router ,'The router will select this route if the requested URL doesn't match any paths for routes defined EARLIER in the configuration.' So putting it before the end means it won't check the routes after it
 
 
         ]),
