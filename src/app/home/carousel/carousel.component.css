@@ -54,12 +54,13 @@
 }
 
 
-#logo-caption {
+.logo-caption {
   overflow: hidden;
   white-space: nowrap;
   font-size: 3vw;
   color: green;
   vertical-align: sub;
+  font-style: italic;
 }
 
 @media only screen and (min-width:1199px) {

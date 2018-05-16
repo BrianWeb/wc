@@ -53,7 +53,8 @@ export class CarouselComponent {
         {
             fileName: 'softwood_timber_tan_e_truck',
             brandName: 'Wood Concepts',
-            productName: 'Wood Concepts Timber',
+            productName: 'Long Lengths',
+            productNameCssClass: "logo-caption",
             productDescription: 'For quality & sustainability',
             imageDescription: 'Tanalised E timber',
             image1Url: "../../../assets/carousel_images/banner_images/long_lengths_small_banner_image.jpg",
