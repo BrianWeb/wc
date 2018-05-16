@@ -60,7 +60,7 @@ export class CarouselComponent {
             image1Url: "../../../assets/carousel_images/banner_images/long_lengths_small_banner_image.jpg",
             productUrl: "long-lengths",
             adSubMessage: "View our range of ",
-            adMainMessageLine1: "Timber Long Lengths",
+            adMainMessageLine1: "Sustainable Timber",
             adMainMessageLine2:""
          
 
