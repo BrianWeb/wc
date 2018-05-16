@@ -55,22 +55,21 @@
     <div class="row no-gutters">
 
       <div id="carousel-images" class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-xl-1">
-
-        <a [routerLink]=" ['/', item.productUrl]" >
+        <a [routerLink]=" ['/products/', item.productUrl]" >
 
           <img src="../../../assets/carousel_images/{{item.fileName}}.jpg" />
           <div class="carousel-caption">
             <!--<div class="carousel-caption d-none d-sm-block">
             -see https://getbootstrap.com/docs/4.0/utilities/display/ for above docs on d-none, d-sm-block-->
             <!--<i id="carousel-caption-heading">{{item.brandName + " " + item.productName}}</i> <br />-->
-            <div id="ad-sub-message">
-              Steico's latest
+            <div id="adSubMessage">
+              {{item.adSubMessage}}
             </div>
-            <div id="ad-main-message">
-              Innovations in <br />
-              Insulation
+            <div id="adMainMessage">
+              {{item.adMainMessageLine1}} <br/>
+              {{item.adMainMessageLine2}}
             </div>
-            <div id="ad-footer-message">
+            <div id="adFooterMessage">
               Learn more >
             </div>
           </div>
@@ -80,18 +79,20 @@
       <div class="carousel-column col-0 col-sm-12 col-md-4 col-lg-4  col-xl-3  ">
 
         <div class="carouselColumnHeaderDiv">
-          <img id="product-logo" src="../../../assets/carousel_images/banner_images/steico-logo-small.png" />
+
+          <img id="product-logo" src={{item.logoUrl}}  />
           <i id="logo-caption">{{item.productName}}</i><br />
           {{item.productDescription}}
         </div>
 
         <div>
-          <img src={{item.imageUrl}} />
+          <img src={{item.image1Url}} />
+          <img src={{item.image2Url}} />
 
           <div id="carouselColumnFooterLogos">
             <img src="../../../assets/carousel_images/banner_images/logos/fsc-simple-logo.jpg" />
             <img src="../../../assets/carousel_images/banner_images/logos/pefc-simple-logo.jpg" />
-            <img src="../../../assets/carousel_images/banner_images/logos/steico-cert.png" />
+            <img src={{item.certLogoUrl}} />
           </div>
 
         </div>

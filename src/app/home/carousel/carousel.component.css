@@ -16,11 +16,7 @@
   }
 }
 
-/*Take away blue hyperlink border:  */
-.carousel {
-  outline: none;
-  border: 0;
-}
+
 
 .carousel-column {
   border-top: solid 15px white;
@@ -43,6 +39,8 @@
   padding-top: 5px;
   padding-bottom: 10px;
 }
+
+
 
 @media only screen and (min-width:1199px) {
   .carousel-column-header-div {
@@ -118,14 +116,14 @@ sustainabilityLogo {
 
 @media only screen and (max-width: 479px) {
 
-  #ad-main-message {
+  #adMainMessage {
     font-size: 1.2em;
     font-weight: 600;
     line-height: 1.2em;
     text-align: right; /*bootstrap override*/
   }
 
-  #ad-footer-message, #ad-sub-message {
+  #adFooterMessage, #adSubMessage {
     display: none;
   }
 }
@@ -136,12 +134,12 @@ sustainabilityLogo {
     top: 4%;
   }
 
-  #ad-sub-message {
+  #adSubMessage {
     font-size: 1.8em;
     text-align: left; /*bootstrap override*/
   }
 
-  #ad-main-message {
+  #adMainMessage {
     font-size: 2em;
     font-weight: 600;
     line-height: 1.2em;
@@ -151,7 +149,7 @@ sustainabilityLogo {
 
 
 
-#ad-footer-message {
+#adFooterMessage {
   padding-top: 10px;
   font-size: 1.1em;
   text-align: right; /*bootstrap override*/

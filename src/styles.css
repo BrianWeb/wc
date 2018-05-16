@@ -138,7 +138,14 @@ figure {
 figcaption {
   font-style: italic;
 }
-
+.backArrrow{
+  font-size: 14px;
+}
+/*Take away blue hyperlink border:  */
+.carousel {
+  outline: none;
+  border: 0;
+}
 .italic {
   font-style: italic;
 }

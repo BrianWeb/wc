@@ -11,6 +11,14 @@
   margin-bottom:20px;
 
 }
+
+#carousel-images img {
+  max-width: 550px;
+  max-height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .productImageTextBox {
   padding: 10px;
   background-color: #fcfcfc;

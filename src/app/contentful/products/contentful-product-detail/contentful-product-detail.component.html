@@ -6,7 +6,7 @@
 
   <a class="defaultButton" (click)='onBack()'>
     <div class="backButton">
-      <i class='fa fa-lg fa-chevron-left'></i> Back
+      <!--<i class='fa fa-lg fa-chevron-left'></i>-->	< Back
     </div>
   </a>
 
@@ -52,7 +52,7 @@
 
                 <div id="carousel-images">
 
-                  <img #bp [src]='image.fields.file.url'
+                  <img [src]='image.fields.file.url'
                        [title]='product.productName' [alt]='product.productName'>
                   <div class="carousel-caption">
                     <!--<div class="carousel-caption d-none d-sm-block">
