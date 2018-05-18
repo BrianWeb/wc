@@ -213,14 +213,10 @@
                     <div class="downloadLinks" *ngFor="let specificationsSheet of specificationsSheets">
                       <div>
                         <a target="_blank" href={{specificationsSheet.fields.file.url}}>
-                          {{specificationsSheet.fields.title}}
+                          {{specificationsSheet.fields.title}} - Download
                         </a>
                       </div>
                     </div>
-
-
-
-
 
                     <!--  <a target="_blank" href={{product.fields.specificationsSheet[0].fields.file.url}}>
                       Download {{product.fields.specificationsSheet[0].fields.title}}
@@ -239,31 +235,36 @@
                   </div>
                 </div>
 
-                <div *ngIf="videos">
 
-                  <div class="productDetailsHeading">
-                    Video Resources
-                  </div>
+                  <div *ngIf="videos">
 
-                  <div *ngFor="let video of videos">
-
-                    <div class="productDetailsText">
-                      {{video.fields.title}}<br /><br />
+                    <div class="productDetailsHeading">
+                      Video Resources
                     </div>
 
-                    <div class="videoContainer">
+                    <div *ngFor="let video of videos">
 
-                     <!-- <video controls [poster]="product.fields.video[1].fields.file.url">-->
-                      <video controls >
-                        <source [src]="video.fields.file.url" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
+                      <div class="productDetailsText">
+                       <!-- Title from Array element 0: {{product.fields.video[0].fields.title}} <br/>
+                        {{video.fields.title}} both of these work-->
+
+                        {{video.fields.url.fields.title}}
+
+                      </div>
+
+                      <div class="videoContainer">
+
+                      
+                        <video controls [poster]="video.fields.previewImage.fields.file.url">
+                          <source [src]="video.fields.url.fields.file.url" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-
+            
               <!--
               <div *ngFor="let forecast of forecasts">
                 Image Array URL here:
@@ -310,7 +311,6 @@
   </div><!-- /*ngIf='product' -->
 
 </div><!-- /product details page -->
-
 <!--
 <div *ngIf="images">
   <div *ngFor="let image of images">
