@@ -144,7 +144,7 @@ sustainabilityLogo {
     font-size: 2em;
     font-weight: 600;
     line-height: 1.2em;
-    text-align: right; /*bootstrap override*/
+    text-align: left; /*bootstrap override*/
   }
 }
 

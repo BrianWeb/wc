@@ -43,9 +43,9 @@ export class CarouselComponent {
             image1Url: '../../../assets/carousel_images/banner_images/steico_i-joist.jpg',
             logoUrl: "../../../assets/carousel_images/banner_images/steico-logo-small.png",
             productUrl: 'i-joists',
-            adSubMessage: "Steico's latest",
-            adMainMessageLine1: "Innovations in ",
-            adMainMessageLine2: "Insulation",
+            //adSubMessage: "Steico's latest",
+            adMainMessageLine1: "Engineered Flooring", //"Innovations in ",
+            adMainMessageLine2: "systems", //"Insulation",
             certLogoUrl: "../../../assets/carousel_images/banner_images/logos/steico-cert.png"
 
         },
@@ -60,9 +60,9 @@ export class CarouselComponent {
             image1Url: "../../../assets/carousel_images/banner_images/long_lengths_small_banner_image.jpg",
             productUrl: "long-lengths",
             adSubMessage: "View our range of ",
-            adMainMessageLine1: "Sustainable Timber",
+            adMainMessageLine1: "Long Length Softwood",
             adMainMessageLine2:""
-         
+        
 
 
         }
