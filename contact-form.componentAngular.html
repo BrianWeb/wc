@@ -12,7 +12,7 @@
              [(ngModel)]="model.name" name="name"
              #name="ngModel">
       <!-- Each input element has an id property that is used by the label element's for attribute to match the label to its input control.
-      Defining a name attribute is a requirement when using [(ngModel)] in combination with a form. Source:https://angular.io/guide/forms
+      Defining a name attribute is a requiremcd ent when using [(ngModel)] in combination with a form. Source:https://angular.io/guide/forms
           #name="ngModel" connects the Name field's state (e.g. clean / dirty) with the div below (e.g. that might display 'Name is required')-->
       <div [hidden]="name.valid || name.pristine"
            class="alert alert-danger">

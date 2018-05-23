@@ -49,6 +49,7 @@ import { NewsComponent } from './contentful/news/news.component';
 
 
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 
 //Clarity
@@ -75,6 +76,7 @@ import { ContactFormComponent } from './contact/contact-form/contact-form.compon
         ContentfulProductListBySubCategory2Component,
         NewsComponent,
         ContactFormComponent,
+        PrivacyPolicyComponent,
     ],
     imports: [
         BrowserModule,
@@ -98,6 +100,7 @@ import { ContactFormComponent } from './contact/contact-form/contact-form.compon
 
             //----/contentful
 
+            { path: 'privacy-policy', component: PrivacyPolicyComponent },
             { path: 'plural', component: ProductListComponent },
             { path: '', redirectTo: 'welcome', pathMatch: 'full' },
             //{ path: '**', redirectTo: 'welcome', pathMatch: 'full' } always put this last because according to https://angular.io/guide/router ,'The router will select this route if the requested URL doesn't match any paths for routes defined EARLIER in the configuration.' So putting it before the end means it won't check the routes after it
