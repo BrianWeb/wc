@@ -50,6 +50,7 @@ import { NewsComponent } from './contentful/news/news.component';
 
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { CookiesPolicyComponent } from './policies/cookies-policy/cookies-policy.component';
 
 
 //Clarity
@@ -77,6 +78,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
         NewsComponent,
         ContactFormComponent,
         PrivacyPolicyComponent,
+        CookiesPolicyComponent,
     ],
     imports: [
         BrowserModule,
@@ -100,6 +102,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 
             //----/contentful
 
+            { path: 'cookies-policy', component: CookiesPolicyComponent },
             { path: 'privacy-policy', component: PrivacyPolicyComponent },
             { path: 'plural', component: ProductListComponent },
             { path: '', redirectTo: 'welcome', pathMatch: 'full' },
