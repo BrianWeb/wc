@@ -55,7 +55,7 @@
     <div class="row no-gutters">
 
       <div id="carousel-images" class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-7 offset-xl-1">
-        <a [routerLink]=" ['/products/', item.productUrl]" >
+        <a [routerLink]=" ['/products/', item.productUrl]">
 
           <img src="../../../assets/carousel_images/{{item.fileName}}.jpg" />
           <div class="carousel-caption">
@@ -66,7 +66,7 @@
               {{item.adSubMessage}}
             </div>
             <div id="adMainMessage">
-              {{item.adMainMessageLine1}} <br/>
+              {{item.adMainMessageLine1}} <br />
               {{item.adMainMessageLine2}}
             </div>
             <div id="adFooterMessage">
@@ -80,7 +80,7 @@
 
         <div class="carouselColumnHeaderDiv">
 
-          <img id="product-logo" src={{item.logoUrl}}  />
+          <img id="product-logo" src={{item.logoUrl}} />
           <span class="logo-caption">{{item.productName}}</span><br />
           {{item.productDescription}}
         </div>
@@ -89,10 +89,21 @@
           <img src={{item.image1Url}} />
           <img src={{item.image2Url}} />
 
-          <div id="carouselColumnFooterLogos">
-            <img src="../../../assets/carousel_images/banner_images/logos/fsc-simple-logo.jpg" />
-            <img src="../../../assets/carousel_images/banner_images/logos/pefc-simple-logo.jpg" />
-            <img src={{item.certLogoUrl}} />
+          <div id="carouselColumnFooter">
+
+            <div id="carouselColumnFooter-Logo">
+              <img src={{item.certLogoUrl}} />
+            </div>
+
+            <!--took below out because, according to FSC logo usage PDF, it was mixing up logos with passive home logo
+  <div id="fscPefcNote">
+    FSC® and PEFC® certified.     <br />
+    <a [routerLink]=" ['/sustainability']">Learn more ></a>
+  </div>-->
+            <!--took below out because FSC audit said below images required 'on-product' logos, meaning the COC number had to be added to logo. That would make the logo too big so I removed it-->
+            <!--<img src="../../../assets/carousel_images/banner_images/logos/fsc-simple-logo.jpg" />
+  <img src="../../../assets/carousel_images/banner_images/logos/pefc-simple-logo.jpg" />-->
+
           </div>
 
         </div>
