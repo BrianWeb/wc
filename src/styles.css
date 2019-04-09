@@ -284,8 +284,12 @@ video, iframe {
  
 }
 
-.sustainabilityLogoGeneral {
+.sustainabilityLogoLandscape {
   max-width: 280px;
+}
+
+.sustainabilityLogoPortraight {
+  max-width: 170px;
 }
 
 .sustainabilityLogoWoodConcepts {
