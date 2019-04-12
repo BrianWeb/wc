@@ -199,6 +199,13 @@ svg {
   justify-content: center;
 }
 
+#fsc-logo-caption {
+  font-size: .8em;
+  color: #285C4D;
+}
 
+  #fsc-logo-caption p {
+    line-height: 5px;
+  }
 
 
