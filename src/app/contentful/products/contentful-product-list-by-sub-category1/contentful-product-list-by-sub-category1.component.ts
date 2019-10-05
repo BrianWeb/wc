@@ -1,6 +1,8 @@
+
+import {switchMap} from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 
-import 'rxjs/add/operator/switchMap';
+
 import { ContentfulService } from '../../contentful.service';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router'; //Router is just for the back button
 import { Entry } from 'contentful';
@@ -28,8 +30,8 @@ export class ContentfulProductListBySubCategory1Component implements OnInit {
 
     ngOnInit() {
 
-        this.route.paramMap
-            .switchMap((params: ParamMap) => this.ContentfulService.getProductBySubCategory2(params.get('subcategory2slug')))
+        this.route.paramMap.pipe(
+            switchMap((params: ParamMap) => this.ContentfulService.getProductBySubCategory2(params.get('subcategory2slug'))))
             .subscribe(products => this.products = products);
 
 

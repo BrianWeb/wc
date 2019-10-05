@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent {
 
-  items: [any];
 
-  constructor() {
-    this.items = [
+
+  constructor() { }
+    items = [
         /*{
             fileName: 'steico_therm_application',
             brandName: 'STEICO',
@@ -79,10 +79,5 @@ export class CarouselComponent {
 
         }*/
     ];
-  }
-
-  ngOnInit(): void { }
-
-
+  
 }
-

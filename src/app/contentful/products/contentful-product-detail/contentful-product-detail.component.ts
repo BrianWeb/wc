@@ -1,19 +1,18 @@
+
+import {switchMap} from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 
-import 'rxjs/add/operator/switchMap';
+
 import { ContentfulService } from '../../contentful.service';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router'; //Router is just for the back button
 import { Entry } from 'contentful';
 
-import 'rxjs/add/operator/catch';
 
-import { Observable } from 'rxjs/Observable'; //bw code
+
+import { Observable } from 'rxjs'; //bw code
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import 'rxjs/add/observable/throw';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/map';
-import { Response } from '@angular/http';
+
+
 
 
 @Component({
@@ -65,8 +64,8 @@ export class ContentfulProductDetailComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.route.paramMap
-            .switchMap((params: ParamMap) => this.ContentfulService.getProduct(params.get('slug')))
+        this.route.paramMap.pipe(
+            switchMap((params: ParamMap) => this.ContentfulService.getProduct(params.get('slug'))))
             .subscribe(product => {
                 this.product = product;
                 //this.jsonProduct = product.fields.brand.fields.companyName;

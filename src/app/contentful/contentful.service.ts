@@ -2,13 +2,6 @@ import { Injectable } from '@angular/core';
 
 import { createClient, Entry, Space, ContentfulClientApi  } from 'contentful';
 
-import { Observable } from 'rxjs/Observable'; //bw code
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import 'rxjs/add/observable/throw';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/map';
-import { Response } from '@angular/http';
 
 // configure the service with tokens and content type ids
 // SET YOU OWN CONFIG here

@@ -2,7 +2,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 //import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; //for NGPrime
 import { FormsModule } from '@angular/forms';
@@ -83,7 +82,7 @@ import { CookiesPolicyComponent } from './policies/cookies-policy/cookies-policy
     imports: [
         BrowserModule,
         HttpClientModule,
-        NgbModule.forRoot(),
+        NgbModule,
         MarkdownModule.forRoot(), //https://github.com/dimpu/ngx-md
         RouterModule.forRoot([
             //{ path: 'welcome', component: WelcomeComponent, children: [{ path: '', component: ProductListComponent }]  },
@@ -122,7 +121,7 @@ import { CookiesPolicyComponent } from './policies/cookies-policy/cookies-policy
         // ClarityModule, Clarity
 
         //ng-bootstrap.github.io:
-        NgbModule.forRoot()
+        NgbModule
     ],
 
     //exports below is just for Contenful
