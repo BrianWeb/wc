@@ -77,14 +77,22 @@ export class ContentfulService
   like the total number of fetched entries but also an Array of items
   which includes the actual products you're interested in.*/
 
-
+  /*
   getProductsToJson(query?: object): Promise<Entry<any>[]> {
       return this.cdaClient.getEntries(Object.assign({ content_type: DEFAULT_CONFIG.contentTypeIds.product }, query))
 
           .then(res => res.items);
+     }
 
-            }
+   //below code by BW - get Applications, which uses the same code as above, in getProducts
+getApplications(query ?: object): Promise < Entry < any > [] > {
+    return this.cdaClient.getEntries(Object.assign({ content_type: DEFAULT_CONFIG.contentTypeIds.product }, query))
+        .then(res => res.items);
+}
 
+
+
+    */
 
 //below code by BW - getStaticPages, which uses the same code as above, in getProducts
   getStaticPages(query?: object): Promise<Entry<any>[]> {
@@ -98,14 +106,6 @@ export class ContentfulService
       return this.cdaClient.getEntries(Object.assign({ content_type: DEFAULT_CONFIG.contentTypeIds.newsArticle }, query))
           .then(res => res.items);
   }
-
-
-   //below code by BW - get Applications, which uses the same code as above, in getProducts
-getApplications(query ?: object): Promise < Entry < any > [] > {
-    return this.cdaClient.getEntries(Object.assign({ content_type: DEFAULT_CONFIG.contentTypeIds.product }, query))
-        .then(res => res.items);
-}
-
 
 
 //bw code for assets:
